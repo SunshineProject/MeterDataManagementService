@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_mobile_sensors
+END
+GetObservation_response.xml
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_mobile_sensors/GetObservation_response.xml
+END
+GetCapabilities_response_mobile_sensor.xml
+K 25
+svn:wc:ra_dav:version-url
+V 204
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_mobile_sensors/GetCapabilities_response_mobile_sensor.xml
+END
+GetObservation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 180
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_mobile_sensors/GetObservation.xml
+END

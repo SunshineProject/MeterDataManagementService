@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering><!--  
+  <type-mapping>
+   <sql-type jdbc-type="BLOB"  hibernate-type="binary" />
+   <sql-type jdbc-type="CLOB"  hibernate-type="text" />-->
+   <!-- Anche se non e' molto chiaro il perche' il tipo primitivo sql TIMESTAMP viene considerato come OTHER insieme agli altri tipi non riconosciuti da SQL.
+    Dato che nel progetto si incontrano solo 2 casi di questo genere (TIMESTAMP e SDO_GEOMETRY) si e' pensato di mappare i tipi OTHER come java.sql.Timestamp
+     e poi gestire l'unico caso di SDO_GEOMETRY con una sostituzione testuale post-reverse-engeneering  --><!--  
+   <sql-type jdbc-type="OTHER" hibernate-type="timestamp" />
+  </type-mapping>
+  <table-filter match-schema="GEST_TOPO" match-name=".*"/>-->
+</hibernate-reverse-engineering>

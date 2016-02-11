@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">xxxxxxx</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://20.39.146.100:5432/dbsos40</property>
+        <property name="hibernate.connection.username">xxxxxx</property>
+        <property name="hibernate.default_schema">xxxxxxxx</property>
+         <property name="hibernate.connection.autocommit">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- <property name="cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
+	  	<property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
+		<property name="current_session_context_class">thread</property>
+		<property name="hibernate.show_sql">false</property>
+		
+		
+		<mapping class="it.sinergis.sunshine.sos40.pojo.Observation"/>
+		<mapping class="it.sinergis.sunshine.sos40.pojo.Observationhasoffering"/>
+		<mapping class="it.sinergis.sunshine.sos40.pojo.Numericvalue"/>
+		<mapping class="it.sinergis.sunshine.sos40.pojo.TaskStatus"/>
+    </session-factory>
+</hibernate-configuration>

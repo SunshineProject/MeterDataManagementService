@@ -1,0 +1,115 @@
+<html lang="it">
+<head>
+<title>Test Service - Datafeeder</title>
+<link href="resources/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css"/>
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/bootstrap-datetimepicker.min.js"></script>
+<script language="JavaScript">
+		
+		    var appUrl = "./SunshineServlet?actionName=";
+		
+			/*------------------------------------------------------*/
+			  function reqServiceForm() {
+			/*------------------------------------------------------*/
+				return false;
+			  }
+
+
+			/*------------------------------------------------------*/
+			  function sendRequest() {
+			/*------------------------------------------------------*/
+			    var servicename = document.form.serviceName.value;
+			    if (servicename=='ImportMeteoDataSOS') {
+			    	execute('POST', appUrl + document.form.serviceName.value, null);			
+				} else  if (servicename=='CreateFileCsvFromGreenButton') {
+					execute('POST', appUrl + document.form.serviceName.value, null);	
+				}
+				
+						
+				return false;
+			  }
+
+
+			/*------------------------------------------------------*/
+			  function cleanThisForm() {
+			/*------------------------------------------------------*/
+				document.form.xmlResponse.value = '';
+				return false;
+			  }					
+
+				function execute($method,$url,$value){ 
+					var xmlhttp;
+					if (window.XMLHttpRequest) {
+						// code for IE7+, Firefox, Chrome, Opera, Safari
+					  	xmlhttp=new XMLHttpRequest();
+					}
+					else {
+						// code for IE6, IE5
+					  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				  	}
+					 
+					xmlhttp.onreadystatechange=function()
+					  {
+						if (xmlhttp.readyState == 4 /* complete */) {
+					        //if (xmlhttp.status == 200) {
+					        	document.form.xmlResponse.value = xmlhttp.responseText;
+					        //}
+					    }				
+					
+					  }
+					xmlhttp.open($method,$url,true) 
+					
+					if($method=='POST' || $method=='PUT')
+						xmlhttp.setRequestHeader("Content-type", "application/atom+xml");
+						
+					xmlhttp.send($value);	
+				}
+
+				
+				
+		</script>
+</head>
+<body>
+	<form name="form" method="GET" enctype="multipart/form-data">
+		<center>
+			<table width="700px">
+				<td>
+					<p class="titolo1">Test Service</p>
+				<tr>
+					<td>
+						<p class="titolo2">Specifica Servizio</p>
+					</td>
+				</tr>
+				<tr>
+					<td><select name="serviceName">
+					       	<option value="CreateFileCsvFromGreenButton">CreateFileCsvFromGreenButton</option>
+							<option value="ImportMeteoDataSOS">ImportMeteoDataSOS</option>
+					</select></td>
+				</tr>				
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr align="center">
+					<td align="center"><input type="button" value="Invia"
+						onclick="javascript:sendRequest(); void(null);" /> <input
+						type="button" value="Pulisci"
+						onclick="javascript:cleanThisForm(); void(null);" /></td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="titolo2">Risposta del servizio</p>
+					</td>
+				</tr>
+				<tr>
+					<td><textarea name="xmlResponse" cols="100" rows="15"></textarea>
+					</td>
+				</tr>
+				</td>
+			</table>
+		</center>
+	</form>
+</body>
+</html>

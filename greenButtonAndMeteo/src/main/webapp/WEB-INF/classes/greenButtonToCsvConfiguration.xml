@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<HourScheduling>01/12</HourScheduling>
+	<MinuteScheduling>0</MinuteScheduling>
+	<SecondScheduling>0</SecondScheduling>
+	<Active>1</Active>
+	<CountUsagePoints>1</CountUsagePoints>
+	<Commodity id="1">ELE</Commodity>
+	<Commodity id="7">GAS</Commodity>
+	<Commodity id="10">STM</Commodity>
+	<Commodity id="12">THE</Commodity>
+	<Commodity id="9">TEM</Commodity>
+	<Commodity id="0">TEM</Commodity>
+
+	<AccumulationBehaviour id="3">A</AccumulationBehaviour>
+	<AccumulationBehaviour id="4">R</AccumulationBehaviour>
+	<AccumulationBehaviour id="12">P</AccumulationBehaviour>
+
+	<Uom id="42">MCU</Uom>
+	<Uom id="134">LTR</Uom>
+	<Uom id="72">KWH</Uom>
+	<Uom id="23">CEL</Uom>
+
+	<TimeAttribute id="0">ir</TimeAttribute>
+	<TimeAttribute id="2">15</TimeAttribute>
+	<TimeAttribute id="7">1h</TimeAttribute>
+	<TimeAttribute id="11">1d</TimeAttribute>
+	<TimeAttribute id="13">1m</TimeAttribute>
+	<TimeAttribute id="24">1w</TimeAttribute>
+	<UsagePoints>
+		<DataCustodian>
+			<Descrizione>CLESS</Descrizione>
+			<IdSubscription>1</IdSubscription>
+			<IdRetailCustomer>1</IdRetailCustomer>
+			<Authorization>4c4ab845-274e-4e55-9a7c-4c6186b757cd</Authorization>
+			<UrlDataCustodian>https://secure.infotn.it/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+			<IdLocalTimeParameters>1</IdLocalTimeParameters>
+			<UrlFileCsv>/home/SUNSHINE/importer/JOB/CLES/csvtmp/</UrlFileCsv>
+
+			<UsagePoint>	
+				<Procedure>VDN-009</Procedure>
+				<Type>CLD</Type>
+				<IdUsagePoint>8</IdUsagePoint>
+				<IdMeterReading>6</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>
+				<Procedure>VDN-010</Procedure>
+				<Type>THE</Type>
+				<IdUsagePoint>9</IdUsagePoint>
+				<IdMeterReading>9</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<Procedure>VDN-011</Procedure>
+				<Type>CLD</Type>
+				<IdUsagePoint>10</IdUsagePoint>
+				<IdMeterReading>10</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>
+				<Procedure>VDN-012</Procedure>
+				<Type>THE</Type>
+				<IdUsagePoint>11</IdUsagePoint>
+				<IdMeterReading>13</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<Procedure>VDN-013</Procedure>
+				<Type>CLD</Type>
+				<IdUsagePoint>12</IdUsagePoint>
+				<IdMeterReading>14</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+			
+		</DataCustodian>
+
+		
+		<DataCustodian>
+			<Descrizione>FERRARA</Descrizione>
+			<IdSubscription>79</IdSubscription>
+			<IdRetailCustomer>1</IdRetailCustomer>
+			<Authorization>42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+
+			<UsagePoint>	
+				<IdUsagePoint>23</IdUsagePoint>
+				<IdMeterReading>11</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>14</IdUsagePoint>
+				<IdMeterReading>2</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>15</IdUsagePoint>
+				<IdMeterReading>3</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>16</IdUsagePoint>
+				<IdMeterReading>4</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>17</IdUsagePoint>
+				<IdMeterReading>5</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>18</IdUsagePoint>
+				<IdMeterReading>6</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>19</IdUsagePoint>
+				<IdMeterReading>7</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>20</IdUsagePoint>
+				<IdMeterReading>8</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>21</IdUsagePoint>
+				<IdMeterReading>9</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>22</IdUsagePoint>
+				<IdMeterReading>10</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+		</DataCustodian>
+
+
+		<DataCustodian>
+			
+			<Descrizione>LAMIA</Descrizione>
+			<IdSubscription>1</IdSubscription>
+			<IdRetailCustomer>1</IdRetailCustomer>
+			<Authorization>a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<UrlFileCsv>/home/SUNSHINE/importer/JOB/LAMIA/csvtmp/</UrlFileCsv>
+
+			<UsagePoint>	
+				<IdUsagePoint>1</IdUsagePoint>
+				<IdMeterReading>1</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>2</IdUsagePoint>
+				<IdMeterReading>2</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3</IdUsagePoint>
+				<IdMeterReading>3</IdMeterReading>
+				<IdReadingType>3</IdReadingType>			
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>4</IdUsagePoint>
+				<IdMeterReading>4</IdMeterReading>
+				<IdReadingType>4</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>5</IdUsagePoint>
+				<IdMeterReading>5</IdMeterReading>
+				<IdReadingType>5</IdReadingType>
+			</UsagePoint>
+		</DataCustodian>
+		
+
+
+		<DataCustodian>
+			<Descrizione>Trentino</Descrizione>
+			<IdSubscription>1</IdSubscription>
+			<IdRetailCustomer>16</IdRetailCustomer>
+			<Authorization>b102aa65-6083-4c6f-8e82-c8a199c371cb</Authorization>
+			<UrlDataCustodian>https://greenbutton.trentinonetwork.it/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+			<IdLocalTimeParameters>1</IdLocalTimeParameters>
+			<UrlFileCsv>/home/SUNSHINE/importer/JOB/TRENTINO/csvtmp/</UrlFileCsv>
+
+			<!-- <RetailCustomer>1</RetailCustomer> 
+			<UsagePoint>	
+				<Procedure>TRN-035</Procedure>
+				<IdUsagePoint>24</IdUsagePoint>
+				<IdMeterReading>9</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Procedure>TRN-T35</Procedure>
+				<IdUsagePoint>24</IdUsagePoint>
+				<IdMeterReading>10</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>	
+				<Procedure>TRN-000</Procedure>
+				<IdUsagePoint>1</IdUsagePoint>
+				<IdMeterReading>6</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Procedure>TRN-T00</Procedure>
+				<IdUsagePoint>1</IdUsagePoint>
+				<IdMeterReading>1</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>	
+				<Procedure>TRN-015</Procedure>
+				<IdUsagePoint>25</IdUsagePoint>
+				<IdMeterReading>11</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Procedure>TRN-T15</Procedure>
+				<IdUsagePoint>25</IdUsagePoint>
+				<IdMeterReading>12</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+-->
+			
+			<UsagePoint>
+				<Descrizione>ALA-107-65170_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-000</Procedure>
+				<IdUsagePoint>1</IdUsagePoint>
+				<IdMeterReading>139</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>ALA-107-65170_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T00</Procedure>
+				<IdUsagePoint>1</IdUsagePoint>
+				<IdMeterReading>140</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>ALBIANO-216-65167_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-001</Procedure>
+				<IdUsagePoint>90</IdUsagePoint>
+				<IdMeterReading>141</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>ALBIANO-216-65167_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T01</Procedure>
+				<IdUsagePoint>90</IdUsagePoint>
+				<IdMeterReading>142</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			
+			<UsagePoint>
+				<Descrizione> ANDALO-192-65129_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-002</Procedure>
+				<IdUsagePoint>91</IdUsagePoint>
+				<IdMeterReading>143</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>ANDALO-192-65129_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T02</Procedure>
+				<IdUsagePoint>91</IdUsagePoint>
+				<IdMeterReading>144</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+
+			<UsagePoint>
+				<Descrizione>BASELGA_DI_PINE-221-65138_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-003</Procedure>
+				<IdUsagePoint>92</IdUsagePoint>
+				<IdMeterReading>145</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BASELGA_DI_PINE-221-65138_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T03</Procedure>
+				<IdUsagePoint>92</IdUsagePoint>
+				<IdMeterReading>146</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione> BEDOLLO-215-65165_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-004</Procedure>
+				<IdUsagePoint>93</IdUsagePoint>
+				<IdMeterReading>147</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione> BEDOLLO-215-65165_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T04</Procedure>
+				<IdUsagePoint>93</IdUsagePoint>
+				<IdMeterReading>148</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>BESENELLO-109-65125_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-005</Procedure>
+				<IdUsagePoint>94</IdUsagePoint>
+				<IdMeterReading>149</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BESENELLO-109-65125_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T05</Procedure>
+				<IdUsagePoint>94</IdUsagePoint>
+				<IdMeterReading>150</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>BEZZECCA-110-65115_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-006</Procedure>
+				<IdUsagePoint>95</IdUsagePoint>
+				<IdMeterReading>151</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BEZZECCA-110-65115_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T06</Procedure>
+				<IdUsagePoint>95</IdUsagePoint>
+				<IdMeterReading>152</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			
+			<UsagePoint>
+				<Descrizione>BLEGGIO_INFERIORE-301-65126_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-007</Procedure>
+				<IdUsagePoint>96</IdUsagePoint>
+				<IdMeterReading>153</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BLEGGIO_INFERIORE-301-65126_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T07</Procedure>
+				<IdUsagePoint>96</IdUsagePoint>
+				<IdMeterReading>154</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			
+			<UsagePoint>
+				<Descrizione>BOCENAGO-250-65127_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-008</Procedure>
+				<IdUsagePoint>97</IdUsagePoint>
+				<IdMeterReading>155</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BLEGGIO_INFERIORE-301-65126_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T08</Procedure>
+				<IdUsagePoint>97</IdUsagePoint>
+				<IdMeterReading>156</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>BREZ-169-65144_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-009</Procedure>
+				<IdUsagePoint>98</IdUsagePoint>
+				<IdMeterReading>157</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>BREZ-169-65144_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T09</Procedure>
+				<IdUsagePoint>98</IdUsagePoint>
+				<IdMeterReading>158</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>CALDES-197-65139_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-010</Procedure>
+				<IdUsagePoint>99</IdUsagePoint>
+				<IdMeterReading>159</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CALDES-197-65139_TEMPR_CEL_15 </Descrizione>
+				<Procedure>TRN-T10</Procedure>
+				<IdUsagePoint>99</IdUsagePoint>
+				<IdMeterReading>160</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			<UsagePoint>
+				<Descrizione>CALDONAZZO-113-65145_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-011</Procedure>
+				<IdUsagePoint>100</IdUsagePoint>
+				<IdMeterReading>161</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CALDONAZZO-113-65145_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T11</Procedure>
+				<IdUsagePoint>100</IdUsagePoint>
+				<IdMeterReading>162</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+			
+			
+			
+			<UsagePoint>
+				<Descrizione>CANAZEI-114-65136_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-013</Procedure>
+				<IdUsagePoint>101</IdUsagePoint>
+				<IdMeterReading>163</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione> CANAZEI-114-65136_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T13</Procedure>
+				<IdUsagePoint>101</IdUsagePoint>
+				<IdMeterReading>164</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+						
+			<UsagePoint>
+				<Descrizione>CASTELLO_TESINO-182-65160_ELER_KWH_15 </Descrizione>
+				<Procedure>TRN-014</Procedure>
+				<IdUsagePoint>102</IdUsagePoint>
+				<IdMeterReading>165</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione> CASTELLO_TESINO-182-65160_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T14</Procedure>
+				<IdUsagePoint>102</IdUsagePoint>
+				<IdMeterReading>166</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			
+			<UsagePoint>
+				<Descrizione>CASTELNUOVO-270-65158_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-015</Procedure>
+				<IdUsagePoint>103</IdUsagePoint>
+				<IdMeterReading>167</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CASTELNUOVO-270-65158_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T15</Procedure>
+				<IdUsagePoint>103</IdUsagePoint>
+				<IdMeterReading>168</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			
+			<UsagePoint>
+				<Descrizione>CAVALESE-105-65133_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-016</Procedure>
+				<IdUsagePoint>25</IdUsagePoint>
+				<IdMeterReading>169</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CAVALESE-105-65133_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T16</Procedure>
+				<IdUsagePoint>25</IdUsagePoint>
+				<IdMeterReading>170</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>CAVARENO-115-65146_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-017</Procedure>
+				<IdUsagePoint>105</IdUsagePoint>
+				<IdMeterReading>171</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CAVARENO-115-65146_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T17</Procedure>
+				<IdUsagePoint>105</IdUsagePoint>
+				<IdMeterReading>172</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>CHIZZOLA-455-65162_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-018</Procedure>
+				<IdUsagePoint>106</IdUsagePoint>
+				<IdMeterReading>173</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CHIZZOLA-455-65162_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-T18</Procedure>
+				<IdUsagePoint>106</IdUsagePoint>
+				<IdMeterReading>174</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>CIVEZZANO-1000-65112_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-019</Procedure>
+				<IdUsagePoint>107</IdUsagePoint>
+				<IdMeterReading>175</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CIVEZZANO-1000-65112_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T19</Procedure>
+				<IdUsagePoint>107</IdUsagePoint>
+				<IdMeterReading>176</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>COMMEZZADURA-117-65140_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-020</Procedure>
+				<IdUsagePoint>108</IdUsagePoint>
+				<IdMeterReading>177</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>COMMEZZADURA-117-65140_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T20</Procedure>
+				<IdUsagePoint>108</IdUsagePoint>
+				<IdMeterReading>178</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>CONDINO-118-65147_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-021</Procedure>
+				<IdUsagePoint>109</IdUsagePoint>
+				<IdMeterReading>179</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>CONDINO-118-65147_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T21</Procedure>
+				<IdUsagePoint>109</IdUsagePoint>
+				<IdMeterReading>180</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>DENNO-119-65148_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-022</Procedure>
+				<IdUsagePoint>110</IdUsagePoint>
+				<IdMeterReading>181</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>DENNO-119-65148_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T22</Procedure>
+				<IdUsagePoint>110</IdUsagePoint>
+				<IdMeterReading>182</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>DRO-121-65117_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-023</Procedure>
+				<IdUsagePoint>111</IdUsagePoint>
+				<IdMeterReading>183</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>DRO-121-65117_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T23</Procedure>
+				<IdUsagePoint>111</IdUsagePoint>
+				<IdMeterReading>184</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>FAI-65113-65113_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-059</Procedure>
+				<IdUsagePoint>112</IdUsagePoint>
+				<IdMeterReading>185</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>FAI-65113-65113_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T59</Procedure>
+				<IdUsagePoint>112</IdUsagePoint>
+				<IdMeterReading>186</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>FORNACE-124-65166_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-025</Procedure>
+				<IdUsagePoint>113</IdUsagePoint>
+				<IdMeterReading>187</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>FORNACE-124-65166_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T25</Procedure>
+				<IdUsagePoint>113</IdUsagePoint>
+				<IdMeterReading>188</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>GRIGNO-125-65161_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-026</Procedure>
+				<IdUsagePoint>114</IdUsagePoint>
+				<IdMeterReading>189</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>GRIGNO-125-65161_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T26</Procedure>
+				<IdUsagePoint>114</IdUsagePoint>
+				<IdMeterReading>190</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>GRUMES-303-65131_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-027</Procedure>
+				<IdUsagePoint>115</IdUsagePoint>
+				<IdMeterReading>191</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>GRUMES-303-65131_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T27</Procedure>
+				<IdUsagePoint>115</IdUsagePoint>
+				<IdMeterReading>192</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>LASINO-254-65119_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-028</Procedure>
+				<IdUsagePoint>116</IdUsagePoint>
+				<IdMeterReading>193</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>LASINO-254-65119_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T28</Procedure>
+				<IdUsagePoint>116</IdUsagePoint>
+				<IdMeterReading>194</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>LAVIS-127-65130_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-029</Procedure>
+				<IdUsagePoint>117</IdUsagePoint>
+				<IdMeterReading>195</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>LAVIS-127-65130_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T29</Procedure>
+				<IdUsagePoint>117</IdUsagePoint>
+				<IdMeterReading>196</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>LEVICO-128-65143_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-030</Procedure>
+				<IdUsagePoint>118</IdUsagePoint>
+				<IdMeterReading>197</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>LEVICO-128-65143_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T30</Procedure>
+				<IdUsagePoint>118</IdUsagePoint>
+				<IdMeterReading>198</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>MOENA-132-65122_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-032</Procedure>
+				<IdUsagePoint>119</IdUsagePoint>
+				<IdMeterReading>199</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>MOENA-132-65122_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T32</Procedure>
+				<IdUsagePoint>119</IdUsagePoint>
+				<IdMeterReading>200</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>MOLINA_DI_FIEMME-305-65149_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-033</Procedure>
+				<IdUsagePoint>120</IdUsagePoint>
+				<IdMeterReading>201</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>MOLINA_DI_FIEMME-305-65149_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T33</Procedure>
+				<IdUsagePoint>120</IdUsagePoint>
+				<IdMeterReading>202</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+			<UsagePoint>
+				<Descrizione>MOLINA_DI_LEDRO-133-65150_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-034</Procedure>
+				<IdUsagePoint>121</IdUsagePoint>
+				<IdMeterReading>203</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>MOLINA_DI_LEDRO-133-65150_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T34</Procedure>
+				<IdUsagePoint>121</IdUsagePoint>
+				<IdMeterReading>204</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>MORI-134-65121_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-035</Procedure>
+				<IdUsagePoint>24</IdUsagePoint>
+				<IdMeterReading>205</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>MORI-134-65121_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-T35</Procedure>
+				<IdUsagePoint>24</IdUsagePoint>
+				<IdMeterReading>206</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			
+			
+			
+			<UsagePoint>
+				<Descrizione>NAGO-TORBOLE-135-65120_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-036</Procedure>
+				<IdUsagePoint>123</IdUsagePoint>
+				<IdMeterReading>207</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>NAGO-TORBOLE-135-65120_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T36</Procedure>
+				<IdUsagePoint>123</IdUsagePoint>
+				<IdMeterReading>208</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>NOVALEDO-136-65157_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-037</Procedure>
+				<IdUsagePoint>124</IdUsagePoint>
+				<IdMeterReading>209</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>NOVALEDO-136-65157_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T37</Procedure>
+				<IdUsagePoint>124</IdUsagePoint>
+				<IdMeterReading>210</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>OSSANA-137-65164_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-038</Procedure>
+				<IdUsagePoint>125</IdUsagePoint>
+				<IdMeterReading>211</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>OSSANA-137-65164_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T38</Procedure>
+				<IdUsagePoint>125</IdUsagePoint>
+				<IdMeterReading>212</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>PINZOLO-139-65128_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-039</Procedure>
+				<IdUsagePoint>126</IdUsagePoint>
+				<IdMeterReading>213</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>PINZOLO-139-65128_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T39</Procedure>
+				<IdUsagePoint>126</IdUsagePoint>
+				<IdMeterReading>214</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>POZZA_DI_FASSA-140-65156_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-040</Procedure>
+				<IdUsagePoint>127</IdUsagePoint>
+				<IdMeterReading>215</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>POZZA_DI_FASSA-140-65156_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T40</Procedure>
+				<IdUsagePoint>127</IdUsagePoint>
+				<IdMeterReading>216</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>PREDAZZO-141-65134_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-041</Procedure>
+				<IdUsagePoint>128</IdUsagePoint>
+				<IdMeterReading>217</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>PREDAZZO-141-65134_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T41</Procedure>
+				<IdUsagePoint>128</IdUsagePoint>
+				<IdMeterReading>218</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>REVO-173-65153_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-042</Procedure>
+				<IdUsagePoint>129</IdUsagePoint>
+				<IdMeterReading>219</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>REVO-173-65153_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T42</Procedure>
+				<IdUsagePoint>129</IdUsagePoint>
+				<IdMeterReading>220</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>RONCONE-302-65114_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-043</Procedure>
+				<IdUsagePoint>130</IdUsagePoint>
+				<IdMeterReading>221</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>RONCONE-302-65114_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T43</Procedure>
+				<IdUsagePoint>130</IdUsagePoint>
+				<IdMeterReading>222</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>ROVERETO-103-65137_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-044</Procedure>
+				<IdUsagePoint>131</IdUsagePoint>
+				<IdMeterReading>223</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>ROVERETO-103-65137_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T44</Procedure>
+				<IdUsagePoint>131</IdUsagePoint>
+				<IdMeterReading>224</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>SANZENO-145-65151_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-048</Procedure>
+				<IdUsagePoint>132</IdUsagePoint>
+				<IdMeterReading>225</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>SANZENO-145-65151_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T48</Procedure>
+				<IdUsagePoint>132</IdUsagePoint>
+				<IdMeterReading>226</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>SAN_LORENZO_IN_BANALE-208-65116_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-045</Procedure>
+				<IdUsagePoint>133</IdUsagePoint>
+				<IdMeterReading>227</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>SAN_LORENZO_IN_BANALE-208-65116_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T45</Procedure>
+				<IdUsagePoint>133</IdUsagePoint>
+				<IdMeterReading>228</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>SAN_MICHELE-144-65123_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-047</Procedure>
+				<IdUsagePoint>134</IdUsagePoint>
+				<IdMeterReading>229</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>SAN_MICHELE-144-65123_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T47</Procedure>
+				<IdUsagePoint>134</IdUsagePoint>
+				<IdMeterReading>230</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>SEGONZANO-220-65168_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-049</Procedure>
+				<IdUsagePoint>135</IdUsagePoint>
+				<IdMeterReading>231</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>SEGONZANO-220-65168_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T49</Procedure>
+				<IdUsagePoint>135</IdUsagePoint>
+				<IdMeterReading>232</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>SOVER-307-65169_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-050</Procedure>
+				<IdUsagePoint>136</IdUsagePoint>
+				<IdMeterReading>233</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>SOVER-307-65169_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T50</Procedure>
+				<IdUsagePoint>136</IdUsagePoint>
+				<IdMeterReading>234</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TAIO-149-65141_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-051</Procedure>
+				<IdUsagePoint>137</IdUsagePoint>
+				<IdMeterReading>235</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TAIO-149-65141_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T51</Procedure>
+				<IdUsagePoint>137</IdUsagePoint>
+				<IdMeterReading>236</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TERLAGO-150-65118_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-058</Procedure>
+				<IdUsagePoint>138</IdUsagePoint>
+				<IdMeterReading>237</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TERLAGO-150-65118_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T58</Procedure>
+				<IdUsagePoint>138</IdUsagePoint>
+				<IdMeterReading>238</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TERRAGNOLO-242-65163_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-060</Procedure>
+				<IdUsagePoint>139</IdUsagePoint>
+				<IdMeterReading>239</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TERRAGNOLO-242-65163_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T60</Procedure>
+				<IdUsagePoint>139</IdUsagePoint>
+				<IdMeterReading>240</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TESERO-151-65135_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-057</Procedure>
+				<IdUsagePoint>140</IdUsagePoint>
+				<IdMeterReading>241</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TESERO-151-65135_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T57</Procedure>
+				<IdUsagePoint>140</IdUsagePoint>
+				<IdMeterReading>242</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TIONE-101-65142_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-052</Procedure>
+				<IdUsagePoint>141</IdUsagePoint>
+				<IdMeterReading>243</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TIONE-101-65142_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T52</Procedure>
+				<IdUsagePoint>141</IdUsagePoint>
+				<IdMeterReading>244</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>TUENNO-152-65152_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-056</Procedure>
+				<IdUsagePoint>142</IdUsagePoint>
+				<IdMeterReading>245</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>TUENNO-152-65152_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T56</Procedure>
+				<IdUsagePoint>142</IdUsagePoint>
+				<IdMeterReading>246</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>VILLA_AGNEDO-272-65159_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-053</Procedure>
+				<IdUsagePoint>143</IdUsagePoint>
+				<IdMeterReading>247</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>VILLA_AGNEDO-272-65159_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T53</Procedure>
+				<IdUsagePoint>143</IdUsagePoint>
+				<IdMeterReading>248</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>VOLANO-155-65124_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-054</Procedure>
+				<IdUsagePoint>144</IdUsagePoint>
+				<IdMeterReading>249</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>VOLANO-155-65124_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T54</Procedure>
+				<IdUsagePoint>144</IdUsagePoint>
+				<IdMeterReading>250</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+			<UsagePoint>
+				<Descrizione>ZIANO_DI_FIEMME-156-65132_ELER_KWH_15</Descrizione>
+				<Procedure>TRN-055</Procedure>
+				<IdUsagePoint>145</IdUsagePoint>
+				<IdMeterReading>251</IdMeterReading>
+				<IdReadingType>2</IdReadingType>			
+			</UsagePoint>
+			<UsagePoint>
+				<Descrizione>ZIANO_DI_FIEMME-156-65132_TEMPR_CEL_15</Descrizione>
+				<Procedure>TRN-T55</Procedure>
+				<IdUsagePoint>145</IdUsagePoint>
+				<IdMeterReading>252</IdMeterReading>
+				<IdReadingType>1</IdReadingType>			
+			</UsagePoint>
+
+
+
+
+
+
+
+
+
+			
+		</DataCustodian>
+		
+		
+		
+		
+		
+		
+		
+		
+		<DataCustodian>
+			<Descrizione>UsagePoint of CROATIA, Hepesco</Descrizione>
+			<IdRetailCustomer>1</IdRetailCustomer>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>ac3a7fb8-0236-4c08-9b9c-c024298beb67</Authorization>
+			<UrlDataCustodian>https://sunshine.hep.hr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<UrlFileCsv>/home/SUNSHINE/importer/JOB/ZAGREB/csvtmp/</UrlFileCsv>
+			<UrlFileCsvok>/home/SUNSHINE/importer/JOB/ZAGREB/csvtmp/</UrlFileCsvok>
+	
+			<UsagePoint>	
+				<Procedure>HRV-009</Procedure>
+				<IdUsagePoint>3089672</IdUsagePoint>
+				<IdMeterReading>3089672</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+			
+			<UsagePoint>	
+				<Procedure>HRV-007</Procedure>
+				<IdUsagePoint>3089671</IdUsagePoint>
+				<IdMeterReading>3089671</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+			
+						<UsagePoint>	
+				<IdUsagePoint>3089637</IdUsagePoint>
+				<IdMeterReading>3089637</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>3089638</IdUsagePoint>
+				<IdMeterReading>3089638</IdMeterReading>
+				<IdReadingType>7</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089639</IdUsagePoint>
+				<IdMeterReading>3089639</IdMeterReading>
+				<IdReadingType>6</IdReadingType>	
+			</UsagePoint>			
+			<UsagePoint>	
+				<IdUsagePoint>3089641</IdUsagePoint>
+				<IdMeterReading>3089641</IdMeterReading>
+				<IdReadingType>3</IdReadingType>	
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089642</IdUsagePoint>
+				<IdMeterReading>3089642</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+				<IdUsagePoint>3089643</IdUsagePoint>
+				<IdMeterReading>3089643</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+				<IdUsagePoint>3089645</IdUsagePoint>
+				<IdMeterReading>3089645</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>	
+			<UsagePoint>	
+				<IdUsagePoint>3089646</IdUsagePoint>
+				<IdMeterReading>3089646</IdMeterReading>
+				<IdReadingType>3</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089647</IdUsagePoint>
+				<IdMeterReading>3089647</IdMeterReading>
+				<IdReadingType>3</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089648</IdUsagePoint>
+				<IdMeterReading>3089648</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089650</IdUsagePoint>
+				<IdMeterReading>3089650</IdMeterReading>
+				<IdReadingType>7</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089651</IdUsagePoint>
+				<IdMeterReading>3089651</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089652</IdUsagePoint>
+				<IdMeterReading>3089652</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089654</IdUsagePoint>
+				<IdMeterReading>3089654</IdMeterReading>
+				<IdReadingType>7</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089655</IdUsagePoint>
+				<IdMeterReading>3089655</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+
+				<IdUsagePoint>3089656</IdUsagePoint>
+				<IdMeterReading>3089656</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+				<IdUsagePoint>3089661</IdUsagePoint>
+				<IdMeterReading>3089661</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089662</IdUsagePoint>
+				<IdMeterReading>3089662</IdMeterReading>
+				<IdReadingType>3</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+				<IdUsagePoint>3089665</IdUsagePoint>
+				<IdMeterReading>3089665</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089666</IdUsagePoint>
+				<IdMeterReading>3089666</IdMeterReading>
+				<IdReadingType>3</IdReadingType>
+			</UsagePoint>
+			<UsagePoint>	
+				<IdUsagePoint>3089668</IdUsagePoint>
+				<IdMeterReading>3089668</IdMeterReading>
+				<IdReadingType>6</IdReadingType>
+			</UsagePoint>
+
+			<UsagePoint>	
+				<IdUsagePoint>3089670</IdUsagePoint>
+				<IdMeterReading>3089670</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+									
+			<UsagePoint>	
+				<IdUsagePoint>3089663</IdUsagePoint>
+				<IdMeterReading>3089663</IdMeterReading>
+				<IdReadingType>2</IdReadingType>
+			</UsagePoint>
+				
+		</DataCustodian>
+		
+	</UsagePoints>
+</Configuration>

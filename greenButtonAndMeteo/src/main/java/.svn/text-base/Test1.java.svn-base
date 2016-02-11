@@ -1,0 +1,10 @@
+import it.sinergis.sunshine.service.ImportMeteoDataSOS;
+
+public class Test1 {
+	public static void main(String args[]) {
+		ImportMeteoDataSOS iSOS = ImportMeteoDataSOS.getInstance();
+		iSOS.insertObservations();
+		
+	}
+	
+}

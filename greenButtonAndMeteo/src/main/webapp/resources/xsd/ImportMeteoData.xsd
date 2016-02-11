@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by A2RB0069 (EMBRACE) -->
+<xs:schema xmlns:sos="http://www.opengis.net/sos/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.opengis.net/sos/2.0" schemaLocation="sos/2.0.0/sos.xsd"/>
+	<xs:element name="ImportMeteoDataResponse">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element name="error" type="xs:string"/>
+				<xs:element name="typeName" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:element name="insertObservation" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:choice>
+										<xs:element name="error" type="xs:string"/>
+										<xs:element ref="sos:InsertObservationResponse"/>
+									</xs:choice>
+									<xs:attribute name="procedure" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="error" type="xs:string"/>
+						</xs:choice>
+						<xs:attribute name="name" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

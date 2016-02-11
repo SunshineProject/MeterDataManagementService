@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<HourScheduling>01/4</HourScheduling>
+	<MinuteScheduling>0</MinuteScheduling>
+	<SecondScheduling>0</SecondScheduling>
+	<Active>0</Active>
+	<CountUsagePoints>10</CountUsagePoints>
+	<Commodity id="1">ELE</Commodity>
+	<Commodity id="7">GAS</Commodity>
+	<Commodity id="10">STM</Commodity>
+	<Commodity id="12">THE</Commodity>
+	<AccumulationBehaviour id="3">A</AccumulationBehaviour>
+	<AccumulationBehaviour id="4">R</AccumulationBehaviour>
+	<Uom id="42">MCU</Uom>
+	<Uom id="134">LTR</Uom>
+	<Uom id="72">KWH</Uom>
+	<TimeAttribute id="0">ir</TimeAttribute>
+	<TimeAttribute id="2">15</TimeAttribute>
+	<TimeAttribute id="7">1h</TimeAttribute>
+	<TimeAttribute id="11">1d</TimeAttribute>
+	<TimeAttribute id="13">1m</TimeAttribute>
+	<TimeAttribute id="24">1w</TimeAttribute>
+	<UsagePoints>
+		<!-- ###########UsagePoint of FERRARA#####################-->
+	
+		<UsagePoint>		
+			<IdUsagePoint>23</IdUsagePoint>
+			<IdMeterReading>11</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>			
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>14</IdUsagePoint>
+			<IdMeterReading>2</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>	
+		<UsagePoint>		
+			<IdUsagePoint>15</IdUsagePoint>
+			<IdMeterReading>3</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>16</IdUsagePoint>
+			<IdMeterReading>4</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>	
+		<UsagePoint>		
+			<IdUsagePoint>17</IdUsagePoint>
+			<IdMeterReading>5</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>18</IdUsagePoint>
+			<IdMeterReading>6</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>19</IdUsagePoint>
+			<IdMeterReading>7</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>20</IdUsagePoint>
+			<IdMeterReading>8</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>21</IdUsagePoint>
+			<IdMeterReading>9</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>		
+		<UsagePoint>		
+			<IdUsagePoint>22</IdUsagePoint>
+			<IdMeterReading>10</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>79</IdSubscription>
+			<Authorization>Bearer 42c828f3-960a-42a1-b40a-e09e7b0afeb6</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/ferrara/</UrlFileCsv>
+			<UrlDataCustodian>http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		-->
+		<!-- ###########_END_## UsagePoint of FERRARA ###########-->
+		<!-- ###########UsagePoint of LAMIA #####################-->
+		<UsagePoint><!-- LAM-011_ELER_KWH_15 -->		
+			<IdUsagePoint>1</IdUsagePoint>
+			<IdMeterReading>1</IdMeterReading>
+			<IdReadingType>1</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>Bearer a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/lamia/</UrlFileCsv>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		<UsagePoint><!-- LAM-012_ELER_KWH_15 -->		
+			<IdUsagePoint>2</IdUsagePoint>
+			<IdMeterReading>2</IdMeterReading>
+			<IdReadingType>2</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>Bearer a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/lamia/</UrlFileCsv>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		<UsagePoint><!-- LAM-013_ELER_KWH_15 -->		
+			<IdUsagePoint>3</IdUsagePoint>
+			<IdMeterReading>3</IdMeterReading>
+			<IdReadingType>3</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>Bearer a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/lamia/</UrlFileCsv>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		<UsagePoint><!-- LAM-014_ELER_KWH_15 -->		
+			<IdUsagePoint>4</IdUsagePoint>
+			<IdMeterReading>4</IdMeterReading>
+			<IdReadingType>4</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>Bearer a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/lamia/</UrlFileCsv>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		<UsagePoint><!-- LAM-015_ELER_KWH_15 -->		
+			<IdUsagePoint>5</IdUsagePoint>
+			<IdMeterReading>5</IdMeterReading>
+			<IdReadingType>5</IdReadingType>
+			<IdLocalTimeParameters>2</IdLocalTimeParameters>
+			<IdSubscription>1</IdSubscription>
+			<Authorization>Bearer a8d68657-fa3c-4c05-9144-1ea7de12500b</Authorization>
+			<UrlFileCsv>/home/SUNSHINE/csv/lamia/</UrlFileCsv>
+			<UrlDataCustodian>https://sunshine-lamia.teiste.gr/DataCustodian/espi/1_1/resource/</UrlDataCustodian>
+			<UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+			<IdentifierObservation>http://www.sunshineproject.eu/swe/observation/</IdentifierObservation>
+		</UsagePoint>
+		<!-- ###########_END_## UsagePoint of LAMIA ###########-->
+	</UsagePoints>
+</Configuration>

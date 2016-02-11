@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util
+END
+ConfigUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/ConfigUtils.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/Constants.java
+END
+UsagePoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/UsagePoint.java
+END
+CreateFileCsvFromGBException.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/CreateFileCsvFromGBException.java
+END
+SplitString.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/SplitString.java
+END
+HibernateListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/HibernateListener.java
+END
+HibernateUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/HibernateUtil.java
+END
+ConfigValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/ConfigValues.java
+END
+ImportMeteoDataException.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/ImportMeteoDataException.java
+END
+ConvertDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/util/ConvertDate.java
+END

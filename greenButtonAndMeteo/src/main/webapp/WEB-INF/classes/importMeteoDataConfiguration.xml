@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+ <HourScheduling>10</HourScheduling>
+ <MinuteScheduling>10</MinuteScheduling>
+ <SecondScheduling>0</SecondScheduling>
+ <Active>1</Active>
+ <TypeNames>
+  <TypeName name="temperature_s">
+   <Unit>Â°C</Unit>
+   <UnitCode>CEL</UnitCode>
+   <ObservedProperty>TEMP</ObservedProperty>
+   <Frequency>1h</Frequency>
+  </TypeName>
+  <TypeName name="wind_speed_s"><!-- WIND m/s-->
+   <Unit>m/s</Unit>
+   <UnitCode>KMH</UnitCode>
+   <ObservedProperty>WIND</ObservedProperty>
+   <Frequency>1h</Frequency>
+  </TypeName>
+  <TypeName name="short_wave_irradiation_s"><!-- IRRA W/m^2-->
+   <Unit>W/m2</Unit>
+   <UnitCode>WM2</UnitCode>
+   <ObservedProperty>IRRA</ObservedProperty>
+   <Frequency>1h</Frequency>
+  </TypeName>
+ </TypeNames>
+ <Wfs>
+  <WfsUser>graphitech</WfsUser>
+  <WfsPassword>21_trent0</WfsPassword>
+  <url>
+   <WfsUrlMeteo><![CDATA[https://sigym3.com/users/graphitech/maps/europe/?AUTH_TYPE=basic&VERSION=1.0.0&SERVICE=WFS&REQUEST=GetFeature]]></WfsUrlMeteo>
+  </url>
+  <url>
+   <WfsUrlObservation><![CDATA[https://sigym3.com/users/graphitech/maps/europe_obs/?AUTH_TYPE=basic&SERVICE=WFS&REQUEST=GetFeature]]></WfsUrlObservation>
+  </url>
+ </Wfs>
+ <Prefix_OfferingIdentifier>http://www.sunshineproject.eu/swe/offering/</Prefix_OfferingIdentifier>
+ <ObservationTypeIdentifier>http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement</ObservationTypeIdentifier>
+ <Prefix_ObservationIdentifier>http://www.sunshineproject.eu/swe/observation/</Prefix_ObservationIdentifier>
+ <Prefix_Identifier>http://www.sunshineproject.eu/swe/procedure/</Prefix_Identifier>
+ <Prefix_ObservedPropertyIdentifier>http://www.sunshineproject.eu/swe/observableProperty/</Prefix_ObservedPropertyIdentifier>
+ <UrlSOS>http://20.39.146.59:8080/SOS40/sos/soap</UrlSOS>
+	<WfsMeteo>
+		<!--VAl di non  -->		
+		<Procedure id="86" code="VDN-F01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/VDN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/VDN/weatherstation/Cles</FeatureOfInterestIdentifier>
+		</Procedure> 
+
+
+
+
+
+			<!--BASSANO -->		
+		<Procedure id="87" code="BAS-F01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/BAS</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/BAS/weatherstation/Bassano</FeatureOfInterestIdentifier>
+		</Procedure> 
+		<!--FERRARA -->		
+		<Procedure id="90" code="FER-F00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/FER</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/FER/weatherstation/Ferrara</FeatureOfInterestIdentifier>
+		</Procedure> 
+		<!-- ROVERETO -->
+		<Procedure id="91" code="ROV-F01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/ROV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/ROV/weatherstation/SanGiorgio</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="92" code="ROV-F02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/ROV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/ROV/weatherstation/RotondaMarco</FeatureOfInterestIdentifier>
+		</Procedure>
+		<!--TRENTINO-->
+		<Procedure id="93" code="TRN-F00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ALA</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="94" code="TRN-F01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ALB</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="95" code="TRN-F02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/AND</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="96" code="TRN-F03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BAP</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="97" code="TRN-F04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BED</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="98" code="TRN-F05">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BES</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="99" code="TRN-F06">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BEZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="100" code="TRN-F07">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BLI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="101" code="TRN-F08">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BOC</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="102" code="TRN-F09">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BRZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="103" code="TRN-F10">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CLD</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="104" code="TRN-F11">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAL</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<Procedure id="106" code="TRN-F13">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="107" code="TRN-F14">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAT</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="108" code="TRN-F15">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="109" code="TRN-F16">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="110" code="TRN-F17">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CVR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="111" code="TRN-F18">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CHZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="112" code="TRN-F19">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CIV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="113" code="TRN-F20">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/COM</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="114" code="TRN-F21">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CON</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="115" code="TRN-F22">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/DEN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="116" code="TRN-F23">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/DRO</FeatureOfInterestIdentifier>
+		</Procedure>
+		
+		<Procedure id="118" code="TRN-F25">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/FOR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="119" code="TRN-F26">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/GRI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="120" code="TRN-F27">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/GRU</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="121" code="TRN-F28">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LAS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="122" code="TRN-F29">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LAV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="123" code="TRN-F30">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LEV</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<Procedure id="125" code="TRN-F32">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="126" code="TRN-F33">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOC</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="127" code="TRN-F34">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOL</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="128" code="TRN-F35">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="129" code="TRN-F36">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/NAG</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="130" code="TRN-F37">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/NOV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="131" code="TRN-F38">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/OSS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="132" code="TRN-F39">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/PNZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="133" code="TRN-F40">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/POZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="134" code="TRN-F41">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/PRD</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="135" code="TRN-F42">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/REV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="136" code="TRN-F43">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/RON</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="137" code="TRN-F44">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/RZI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="138" code="TRN-F45">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SLB</FeatureOfInterestIdentifier>
+		</Procedure>
+		<!--<Procedure id="139" code="TRN-F46">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SMC</FeatureOfInterestIdentifier>
+		</Procedure>-->
+		<Procedure id="140" code="TRN-F47">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SMI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="141" code="TRN-F48">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SZE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="142" code="TRN-F49">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SEG</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="143" code="TRN-F50">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SOV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="144" code="TRN-F51">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TAI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="145" code="TRN-F52">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TIO</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="146" code="TRN-F53">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/VGN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="147" code="TRN-F54">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/VOL</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="148" code="TRN-F55">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ZIA</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="149" code="TRN-F56">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TUE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="150" code="TRN-F57">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TES</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="151" code="TRN-F58">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TER</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="152" code="TRN-F59">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/FAI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="153" code="TRN-F60">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TRG</FeatureOfInterestIdentifier>
+		</Procedure>
+
+
+
+
+		<!-- Lamia, GRECIA-->
+		<Procedure id="154" code="LAM-F00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolTechApplications1</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="155" code="LAM-F01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolTechApplications2</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="156" code="LAM-F02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolHealthcare</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="157" code="LAM-F03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/Library</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="158" code="LAM-F04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/Administration</FeatureOfInterestIdentifier>
+		</Procedure>
+
+
+		<!--Croazia -->
+		<Procedure id="159" code="HRV-F00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/UpravnaZgrada</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="162" code="HRV-F03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/Toplinarstvo</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="163" code="HRV-F04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/ODSElektraGunduliceva</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="164" code="HRV-F05">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/ODSElektraIzidora</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="167" code="HRV-F08">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Varazdin/ODSElektra</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="168" code="HRV-F09">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Kriz/ODSElektra</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<!--PAOLA-->		
+		<Procedure id="88" code="PAO-F00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/PAO</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/PAO/weatherstation/Paola</FeatureOfInterestIdentifier>
+		</Procedure>
+	
+		
+		
+		
+
+		
+		
+		
+		
+	</WfsMeteo> 
+	<WfsOsservazioni>
+
+
+		<!--VAl di non  -->		
+		<Procedure id="86" code="VDN-M01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/VDN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/VDN/weatherstation/Cles</FeatureOfInterestIdentifier>
+		</Procedure> 
+
+
+		<Procedure id="87" code="BAS-M01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/BAS</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/BAS/weatherstation/Bassano</FeatureOfInterestIdentifier>
+		</Procedure> 
+		<!--FERRARA -->
+
+
+				
+		<Procedure id="90" code="FER-M00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/FER</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/FER/weatherstation/Ferrara</FeatureOfInterestIdentifier>
+		</Procedure>
+		<!-- ROVERETO -->
+		<Procedure id="91" code="ROV-M01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/ROV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/ROV/weatherstation/SanGiorgio</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="92" code="ROV-M02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/ROV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/ROV/weatherstation/RotondaMarco</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<!--TRENTINO-->
+		<Procedure id="93" code="TRN-M00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ALA</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="94" code="TRN-M01">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ALB</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="95" code="TRN-M02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/AND</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="96" code="TRN-M03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BAP</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="97" code="TRN-M04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BED</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="98" code="TRN-M05">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BES</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="99" code="TRN-M06">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BEZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="100" code="TRN-M07">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BLI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="101" code="TRN-M08">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BOC</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="102" code="TRN-M09">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/BRZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="103" code="TRN-M10">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CLD</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="104" code="TRN-M11">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAL</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<Procedure id="106" code="TRN-M13">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="107" code="TRN-M14">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAT</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="108" code="TRN-M15">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="109" code="TRN-M16">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CAV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="110" code="TRN-M17">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CVR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="111" code="TRN-M18">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CHZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="112" code="TRN-M19">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CIV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="113" code="TRN-M20">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/COM</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="114" code="TRN-M21">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/CON</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="115" code="TRN-M22">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/DEN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="116" code="TRN-M23">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/DRO</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		
+		<Procedure id="118" code="TRN-M25">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/FOR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="119" code="TRN-M26">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/GRI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="120" code="TRN-M27">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/GRU</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="121" code="TRN-M28">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LAS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="122" code="TRN-M29">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LAV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="123" code="TRN-M30">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/LEV</FeatureOfInterestIdentifier>
+		</Procedure>
+		
+		<Procedure id="125" code="TRN-M32">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="126" code="TRN-M33">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOC</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="127" code="TRN-M34">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOL</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="128" code="TRN-M35">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/MOR</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="129" code="TRN-M36">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/NAG</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="130" code="TRN-M37">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/NOV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="131" code="TRN-M38">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/OSS</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="132" code="TRN-M39">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/PNZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="133" code="TRN-M40">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/POZ</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="134" code="TRN-M41">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/PRD</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="135" code="TRN-M42">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/REV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="136" code="TRN-M43">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/RON</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="137" code="TRN-M44">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/RZI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="138" code="TRN-M45">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SLB</FeatureOfInterestIdentifier>
+		</Procedure>
+		
+		<Procedure id="140" code="TRN-M47">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SMI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="141" code="TRN-M48">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SZE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="142" code="TRN-M49">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SEG</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="143" code="TRN-M50">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/SOV</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="144" code="TRN-M51">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TAI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="145" code="TRN-M52">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TIO</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="146" code="TRN-M53">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/VGN</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="147" code="TRN-M54">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/VOL</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="148" code="TRN-M55">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/ZIA</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="149" code="TRN-M56">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TUE</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="150" code="TRN-M57">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TES</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="151" code="TRN-M58">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TER</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="152" code="TRN-M59">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/FAI</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="153" code="TRN-M60">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/TRN</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/TRN/weatherstation/TRG</FeatureOfInterestIdentifier>
+		</Procedure>
+
+
+		<!--Croazia -->
+		<Procedure id="159" code="HRV-M00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/UpravnaZgrada</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<Procedure id="162" code="HRV-M03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/Toplinarstvo</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="163" code="HRV-M04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/ODSElektraGunduliceva</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="164" code="HRV-M05">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Zagreb/ODSElektraIzidora</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<Procedure id="167" code="HRV-M08">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Varazdin/ODSElektra</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="168" code="HRV-M09">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/HRV</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/HRV/weatherstation/Kriz/ODSElektra</FeatureOfInterestIdentifier>
+		</Procedure>
+
+		<!-- PAOLA-->
+
+		<Procedure id="88" code="PAO-M00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/PAO</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/PAO/weatherstation/Paola</FeatureOfInterestIdentifier>
+		</Procedure>
+		
+		<!-- LAMIA -->
+		
+		<Procedure id="154" code="LAM-M00">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolTechApplications1</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="155" code="LAM-M01">"LAM/weatherstation/SchoolHealthcare"
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolTechApplications2</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="156" code="LAM-M02">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/SchoolHealthcare</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="157" code="LAM-M03">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/Library</FeatureOfInterestIdentifier>
+		</Procedure>
+		<Procedure id="158" code="LAM-M04">
+			<CodeSpaceIdentifier>http://www.sunshineproject.eu/swe/project-pilot/LAM</CodeSpaceIdentifier>
+			<FeatureOfInterestIdentifier>http://www.sunshineproject.eu/swe/featureOfInterest/LAM/weatherstation/Administration</FeatureOfInterestIdentifier>
+		</Procedure>
+
+	</WfsOsservazioni></Configuration>

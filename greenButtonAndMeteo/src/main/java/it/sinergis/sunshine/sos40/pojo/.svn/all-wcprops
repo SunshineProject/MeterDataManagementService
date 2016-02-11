@@ -1,0 +1,251 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo
+END
+PhenomenonTimestart.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/PhenomenonTimestart.java
+END
+Observation.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Observation.java
+END
+GeometryColumns.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/GeometryColumns.java
+END
+Booleanvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Booleanvalue.java
+END
+Observationtype.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Observationtype.java
+END
+Relatedfeaturehasrole.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Relatedfeaturehasrole.java
+END
+Textvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Textvalue.java
+END
+Validproceduretime.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Validproceduretime.java
+END
+Spatialfilteringprofile.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Spatialfilteringprofile.java
+END
+GeographyColumns.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/GeographyColumns.java
+END
+RasterColumns.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/RasterColumns.java
+END
+Offeringhasrelatedfeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Offeringhasrelatedfeature.java
+END
+Geometryvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Geometryvalue.java
+END
+SpatialRefSys.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/SpatialRefSys.java
+END
+Codespace.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Codespace.java
+END
+Observableproperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Observableproperty.java
+END
+Series.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Series.java
+END
+Featureofinterest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Featureofinterest.java
+END
+Categoryvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Categoryvalue.java
+END
+Featureofinteresttype.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Featureofinteresttype.java
+END
+Offeringallowedfeaturetype.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Offeringallowedfeaturetype.java
+END
+Compositephenomenon.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Compositephenomenon.java
+END
+Relatedfeature.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Relatedfeature.java
+END
+Parameter.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Parameter.java
+END
+Sensorsystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Sensorsystem.java
+END
+Observationconstellation.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Observationconstellation.java
+END
+Offering.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Offering.java
+END
+Numericvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Numericvalue.java
+END
+Unit.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Unit.java
+END
+Offeringallowedobservationtype.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Offeringallowedobservationtype.java
+END
+Swedataarrayvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Swedataarrayvalue.java
+END
+Countvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Countvalue.java
+END
+Relatedfeaturerole.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Relatedfeaturerole.java
+END
+Proceduredescriptionformat.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Proceduredescriptionformat.java
+END
+RasterOverviews.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/RasterOverviews.java
+END
+Resulttemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Resulttemplate.java
+END
+TaskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/vsvn/sinergis_apps/!svn/ver/1168/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/TaskStatus.java
+END
+Observationhasoffering.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Observationhasoffering.java
+END
+Blobvalue.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Blobvalue.java
+END
+Procedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Procedure.java
+END
+Featurerelation.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/java/it/sinergis/sunshine/sos40/pojo/Featurerelation.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network
+END
+GetObservation_response.xml
+K 25
+svn:wc:ra_dav:version-url
+V 201
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network/GetObservation_response.xml
+END
+GetFeatureOfInterest_Response.xml
+K 25
+svn:wc:ra_dav:version-url
+V 207
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network/GetFeatureOfInterest_Response.xml
+END
+GetFeatureOfInterest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 198
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network/GetFeatureOfInterest.xml
+END
+GetCapabilities_response_homogeneous_sensor_network.xml
+K 25
+svn:wc:ra_dav:version-url
+V 229
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network/GetCapabilities_response_homogeneous_sensor_network.xml
+END
+GetObservation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 192
+/vsvn/sinergis_apps/!svn/ver/1108/sunshine/sunshine-services/branches/sunshineService2.0/src/main/webapp/resources/xsd/sos/2.0.0/examples/_useCase_homogeneous_sensor_network/GetObservation.xml
+END

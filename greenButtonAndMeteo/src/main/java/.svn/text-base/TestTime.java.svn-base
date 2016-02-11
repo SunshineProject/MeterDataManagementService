@@ -1,0 +1,43 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+import org.joda.time.format.DateTimeFormatter;
+import org.joda.time.format.ISODateTimeFormat;
+
+public class TestTime {
+	private final static SimpleDateFormat df1 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+	private final static SimpleDateFormat df2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	private final static SimpleDateFormat df3 = new SimpleDateFormat("yyyy-MM-dd");
+	private final static SimpleDateFormat df4 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
+	private final static SimpleDateFormat df5 = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX");
+	
+	public static void main(String args[]) throws ParseException {
+		DateTimeFormatter parser2 = ISODateTimeFormat.dateTimeNoMillis();
+		
+		String starttime = "2015-04-15T06:00:00+02:00";
+		String basetime = "2015-04-15T06:00:00+02:00";
+		System.out.println("starttime:" + starttime);
+		System.out.println("basetime:" + basetime);
+		
+		df4.setTimeZone(TimeZone.getTimeZone("UTC"));
+		Date starttimeDate = df4.parse(starttime);
+		
+		df2.setTimeZone(TimeZone.getTimeZone("UTC"));
+		
+		String endtime = df5.format(starttimeDate);
+		
+		String endtimeidentifier = df2.format(starttimeDate);
+		
+		Date baseDate = df4.parse(starttime);
+		String basetimeidentifier = df3.format(baseDate);
+		
+		System.out.println("endtime:" + endtime);
+		
+		System.out.println("endtimeidentifier:" + endtimeidentifier);
+		System.out.println("basetimeidentifier:" + basetimeidentifier);
+		
+	}
+	
+}

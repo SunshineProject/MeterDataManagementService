@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by A2RB0069 (EMBRACE) -->
+<xs:schema xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:espi="http://naesb.org/espi" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.w3.org/2005/Atom" schemaLocation="atom.xsd"/>
+	<xs:import namespace="http://naesb.org/espi" schemaLocation="espiDerived.xsd"/>
+	<xs:element name="CreateFileCsvFromGreenButtonResponse">
+		<xs:complexType>
+			<xs:choice minOccurs="0">
+				<xs:element name="usagePoint" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="idUsagePoint" type="xs:integer"/>
+							<xs:choice>
+								<xs:element name="error" type="xs:string"/>
+								<xs:element name="pathDirectoryCsv"/>
+							</xs:choice>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="error" type="xs:string"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
