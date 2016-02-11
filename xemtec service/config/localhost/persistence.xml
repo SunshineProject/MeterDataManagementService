@@ -1,0 +1,24 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence persistence_1_0.xsd" version="1.0">
+    <persistence-unit name="xemtec">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>it.sinergis.sunshine.model.XemtecDevices</class>
+        <properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/> 
+            <property name="hibernate.connection.url" value="jdbc:mysql://20.39.146.80:3306/installer_xemtecdb"/>
+            <property name="hibernate.connection.user" value="root"/>
+            <property name="hibernate.connection.password" value="sunshine"/>
+            <property name="hibernate.connection.autoReconnect" value="true" />
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.hbm2ddl.auto" value="off"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>  
+            <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider" />  
+            <property name="c3p0.idle_test_period" value="120"/>  
+            <property name="c3p0.max_size" value="30"/> 
+            <property name="c3p0.max_statements" value="50"/> 
+            <property name="c3p0.min_size" value="5"/> 
+            <property name="c3p0.acquire_increment" value="1"/> 
+            <property name="c3p0.validate" value="true"/> 
+            <property name="c3p0.timeout" value="1800"/>    
+        </properties>
+    </persistence-unit>   
+</persistence>

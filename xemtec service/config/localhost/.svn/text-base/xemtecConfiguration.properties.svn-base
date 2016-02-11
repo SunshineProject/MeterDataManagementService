@@ -1,0 +1,15 @@
+oraScheduling=0/4
+minutoScheduling=0
+secondoScheduling=0
+attivo=1
+urlDataCustodian=http://20.39.146.80:8080/DataCustodian/espi/1_1/resource/
+authorization=Bearer 39c05d8b-0f0d-4122-beda-d16a18d9fbae
+
+idRetailCustomer_1=1
+idUsagePoint_1=1
+idMeterReading_1=1
+idDevice_1=2
+
+#urlFileCsv_1=d\:\\temp\\csv
+
+countUsagePoint=1

@@ -1,0 +1,8 @@
+############################################################
+###### File di configurazione per lo scheduler Quartz ######
+############################################################
+org.quartz.scheduler.instanceName = SchedulerBatch
+org.quartz.threadPool.class = org.quartz.simpl.SimpleThreadPool
+org.quartz.threadPool.threadCount = 1
+org.quartz.jobStore.class = org.quartz.simpl.RAMJobStore
+org.quartz.scheduler.skipUpdateCheck = true

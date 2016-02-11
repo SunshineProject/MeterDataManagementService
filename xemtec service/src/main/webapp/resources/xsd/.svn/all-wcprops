@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/vsvn/sinergis_apps/!svn/ver/894/sunshine/xemtec-services/trunk/src/main/webapp/resources/xsd
+END
+espiDerived.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/webapp/resources/xsd/espiDerived.xsd
+END
+CreateIntervalBlock.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/vsvn/sinergis_apps/!svn/ver/894/sunshine/xemtec-services/trunk/src/main/webapp/resources/xsd/CreateIntervalBlock.xsd
+END
+atom.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/webapp/resources/xsd/atom.xsd
+END

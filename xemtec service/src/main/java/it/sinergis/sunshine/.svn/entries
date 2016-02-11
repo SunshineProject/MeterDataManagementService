@@ -1,0 +1,55 @@
+10
+
+dir
+1104
+http://srv11svn.deltadator.inet:9191/vsvn/sinergis_apps/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine
+http://srv11svn.deltadator.inet:9191/vsvn/sinergis_apps
+
+
+
+2014-10-24T13:33:06.978000Z
+1039
+rossana.bambili
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5917e2d2-3217-4b41-b469-3cf702a23054
+
+commons
+dir
+
+dao
+dir
+
+jpadao
+dir
+
+listener
+dir
+
+model
+dir
+
+persistence
+dir
+
+service
+dir
+
+servlet
+dir
+
+util
+dir
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine/jpadao
+END
+AbstractJpaDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine/jpadao/AbstractJpaDAO.java
+END
+JpaXemtecValuesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine/jpadao/JpaXemtecValuesDAO.java
+END
+JpaDAOFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine/jpadao/JpaDAOFactory.java
+END
+JpaXemtecDevicesDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/vsvn/sinergis_apps/!svn/ver/887/sunshine/xemtec-services/trunk/src/main/java/it/sinergis/sunshine/jpadao/JpaXemtecDevicesDAO.java
+END
