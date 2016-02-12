@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>tranImportLampada</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#x2f;08&#x2f;25 10&#x3a;33&#x3a;20.767</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#x2f;08&#x2f;25 10&#x3a;33&#x3a;20.767</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name></name>
+    <server></server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database></database>
+    <port></port>
+    <username></username>
+    <password></password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MSSQL.instance</code><attribute>SQLEXPRESS</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Get File Names</from><to>CSV file input</to><enabled>Y</enabled> </hop>
+  <hop> <from>CSV file input</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value</from><to>Select values</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values</from><to>Table input</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input</from><to>Modified Java Script Value 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value</from><to>Select values 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Dummy &#x28;do nothing&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Select values 2</from><to>Table input 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input 2</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>CSV file input</from><to>Stream lookup</to><enabled>N</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Modified Java Script Value 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get Variables</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Dummy &#x28;do nothing&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get Variables</from><to>Text file output</to><enabled>N</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Write to log</to><enabled>Y</enabled> </hop>
+  <hop> <from>Write to log</from><to>Get File Names</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 2</from><to>Filter rows 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3</from><to>csv delle ore</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 2</from><to>Filter rows 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 4</from><to>csv della potenza</to><enabled>Y</enabled> </hop>
+  <hop> <from>Modified Java Script Value 3</from><to>Filter rows 5</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 5</from><to>csv dimming</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 3</from><to>Dummy &#x28;do nothing&#x29; 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 4</from><to>Dummy &#x28;do nothing&#x29; 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 5</from><to>Dummy &#x28;do nothing&#x29; 5</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>CSV file input</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename/>
+    <filename_field>filename</filename_field>
+    <rownum_field/>
+    <include_filename>Y</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <header>N</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>Y</lazy_conversion>
+    <add_filename_result>N</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding/>
+    <fields>
+      <field>
+        <name>lamp</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>dat</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>262</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1129</xloc>
+      <yloc>280</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>275</xloc>
+      <yloc>15</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1134</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 4</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1406</xloc>
+      <yloc>36</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 5</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1373</xloc>
+      <yloc>383</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Dummy &#x28;do nothing&#x29;</send_true_to>
+<send_false_to>Modified Java Script Value 3</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>stepid</leftvalue>
+   <function>IS NULL</function>
+   <rightvalue/>
+   </condition>
+  <condition>
+   <negated>N</negated>
+   <operator>OR</operator>
+   <conditions>
+    <condition>
+     <negated>N</negated>
+     <leftvalue>orario</leftvalue>
+     <function>IS NULL</function>
+     <rightvalue/>
+     </condition>
+    <condition>
+     <negated>N</negated>
+     <operator>OR</operator>
+     <leftvalue>azione</leftvalue>
+     <function>IS NULL</function>
+     <rightvalue/>
+     </condition>
+    </conditions>
+   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1026</xloc>
+      <yloc>217</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Write to log</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>quadro</leftvalue>
+ <function>LIKE</function>
+ <rightvalue/>
+ <value><name>constant</name><type>String</type><text>FALSE</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>163</xloc>
+      <yloc>10</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 3</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>csv delle ore</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 3</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>TimeLampOn</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1189</xloc>
+      <yloc>59</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 4</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>csv della potenza</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 4</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>TheorPower</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1222</xloc>
+      <yloc>113</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 5</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>csv dimming</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 5</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>azione</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1455</xloc>
+      <yloc>277</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get File Names</name>
+    <type>GetFileNames</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filter>
+      <filterfiletype>all_files</filterfiletype>
+    </filter>
+    <doNotFailIfNoFile>N</doNotFailIfNoFile>
+    <rownum>N</rownum>
+    <isaddresult>Y</isaddresult>
+    <filefield>Y</filefield>
+    <rownum_field/>
+    <filename_Field>f_name</filename_Field>
+    <wildcard_Field/>
+    <exclude_wildcard_Field/>
+    <dynamic_include_subfolders>N</dynamic_include_subfolders>
+    <limit>0</limit>
+    <file>
+      <name>C&#x3a;&#x5c;Sviluppo&#x5c;temp&#x5c;conf&#x5c;line</name>
+      <filemask>&#x24;&#x7b;f_short_name&#x7d;</filemask>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>158</xloc>
+      <yloc>128</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get Variables</name>
+    <type>GetVariable</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>quadro</name>
+        <variable>&#x24;&#x7b;QUADRO&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+      <field>
+        <name>f_name</name>
+        <variable>&#x24;&#x7b;f_name&#x7d;</variable>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>27</xloc>
+      <yloc>14</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script qua&#xd;&#xa;&#x2f;&#x2f; data rev 2014-01-28 14&#x3a;30&#x3a;00.000000000&#xd;&#xa;var date_now &#x3d; new Date&#x28;&#x29;&#x3b;&#xd;&#xa;date_now &#x3d; dateAdd&#x28;date_now, &#x22;d&#x22;, -1&#x29;&#x3b;&#x2f;&#x2f;tolgo un giorno&#xd;&#xa;&#x2f;&#x2f;date_now.setHours&#x28;dat&#x29;&#x3b;&#xd;&#xa;date_now.setHours&#x28;0&#x29;&#x3b;&#xd;&#xa;date_now.setMinutes&#x28;0&#x29;&#x3b;&#xd;&#xa;date_now.setSeconds&#x28;0&#x29;&#x3b;&#xd;&#xa;dayRecNormalize &#x3d; date2str&#x28;date_now,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#xd;&#xa;&#x2f;&#x2f;var date_string &#x3d; date2str&#x28;yesterday,&#x22;yyyy.MM.dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;var date_string &#x3d; &#x27;2006-01-10 01&#x3a;00&#x3a;00.000&#x27;&#x3b;&#xd;&#xa;&#x2f;&#x2f;date_string &#x3d; date_string &#x2b; &#x22;.000000000&#x22;&#x3b;&#xd;&#xa;&#xd;&#xa;var minutes&#x3d;0&#x3b;&#xd;&#xa;var checkminutes &#x3d; dat &#x2a; 60&#x3b;&#xd;&#xa;if &#x28;checkminutes &#x3c; 720&#x29;&#x7b;&#xd;&#xa;	minutes &#x3d; 	checkminutes &#x2b; 720&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else &#x7b;&#xd;&#xa;	minutes &#x3d; checkminutes&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;var param &#x3d; getShortFilename&#x28;filename&#x29;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;aggiorno nome file&#xd;&#xa;&#x2f;&#x2f;var param &#x3d; getEnvironmentVar&#x28;&#x22;f_short_name&#x22;&#x29;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;var n &#x3d; str2num&#x28;param&#x5b;2&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d;&#x29;&#x3b;&#xd;&#xa;n &#x3d; n &#x2b; 1&#x3b;&#xd;&#xa;var str_n &#x3d; num2str&#x28;n&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;while &#x28;str_n.length &#x3c; 8&#x29; &#x7b;&#xd;&#xa;  str_n &#x3d; &#x22;0&#x22; &#x2b; str_n&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;var new_name &#x3d; replace&#x28;getEnvironmentVar&#x28;&#x22;f_name_lamp&#x22;&#x29; , param&#x5b;2&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d; , str_n&#x29;&#x3b;&#xd;&#xa;moveFile&#x28;getEnvironmentVar&#x28;&#x22;f_name_lamp&#x22;&#x29;, new_name,true&#x29;&#x3b;&#xd;&#xa;deleteFile&#x28;getEnvironmentVar&#x28;&#x22;f_name_lamp&#x22;&#x29;&#x29;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>-1</jsScript_type>
+        <jsScript_name>getShortFilename_Sample</jsScript_name>
+        <jsScript_script>&#xa;&#x2f;&#x2f; &#xa;&#x2f;&#x2f; Usage&#x3a;&#xa;&#x2f;&#x2f; getShortFilename&#x28;var1&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; String - The file&#xa;&#x2f;&#x2f; The result is a String&#xa;&#x2f;&#x2f; 2007-10-29&#xa;&#x2f;&#x2f;&#xa;var sourcefile&#x3d;&#x22;your source filename with path&#x22;&#x3b;&#xa;getShortFilename&#x28;sourcefile&#x29;&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>date_string</name>
+        <rename>date_string</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>minutes</name>
+        <rename>minutes</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>dayRecNormalize</name>
+        <rename>dayRecNormalize</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>504</xloc>
+      <yloc>111</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 2</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script qua&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;REV-001&#xd;&#xa;&#x2f;&#x2f;shortname &#x3d; conf_REV-001_THER_KWH_1h_00000001.csv&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;nome file per consumo KWh RVB-100_ELER_KWH_1h&#xd;&#xa;&#x2f;&#x2f;potenza instantanea       RVB-101_IPOW_WAT_1h&#xd;&#xa;&#x2f;&#x2f;dimming lampada           RVB-101_DIMM_PRC_1h&#xd;&#xa;&#x2f;&#x2f;ore di accesioni totali   RVB-101_LIFE_HRS_1h&#xd;&#xa;&#x2f;&#x2f;temperatura lampada       RVB-101_TEMP_CEL_1h&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var name_csv &#x3d; &#x22;&#x2f;home&#x2f;SUNSHINE&#x2f;importer&#x2f;JOB&#x2f;BASSANO&#x2f;csvtmp&#x2f;&#x22;&#x3b;&#xd;&#xa;var param &#x3d; getEnvironmentVar&#x28;&#x22;f_short_name&#x22;&#x29;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var param &#x3d; &#x22;conf_REV-001_THER_KWH_1h_00000001.csv&#x22;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;name_csv &#x3d; name_csv &#x2b; param&#x5b;1&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;2&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;3&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;4&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;5&#x5d;&#x3b;&#xd;&#xa;name_csv_consumo &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_ELER_KWH_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_potenza &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_IPOW_WAT_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_dimming &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_DIMM_PRC_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_ore &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_LIFE_HRS_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_temperatura &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_TEMP_CEL_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var n &#x3d; str2num&#x28;param&#x5b;2&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d;&#x29;&#x3b;&#xd;&#xa;n &#x3d; n &#x2b; 1&#x3b;&#xd;&#xa;var str_n &#x3d; num2str&#x28;n&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;while &#x28;str_n.length &#x3c; 8&#x29; &#x7b;&#xd;&#xa;  str_n &#x3d; &#x22;0&#x22; &#x2b; str_n&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var new_name &#x3d; replace&#x28;getEnvironmentVar&#x28;&#x22;f_name&#x22;&#x29; , param&#x5b;2&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d; , str_n&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var new_name &#x3d; replace&#x28;&#x22;C&#x3a;&#x5c;&#x5c;Sviluppo&#x5c;&#x5c;temp&#x5c;&#x5c;conf_REV-001_THER_KWH_1h_00000001.csv&#x22; , param&#x5b;5&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d; , n&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;moveFile&#x28;getEnvironmentVar&#x28;&#x22;f_name&#x22;&#x29;, new_name,true&#x29;&#x3b;&#xd;&#xa;if &#x28;fileExists&#x28;new_name&#x29;&#x29;&#x7b;&#xd;&#xa;	deleteFile&#x28;getEnvironmentVar&#x28;&#x22;f_name&#x22;&#x29;&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;var rec_date_normalize &#x3d; date2str&#x28;RecDateTime,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;var timeLampOnH &#x3d; TimeLampOn&#x3b;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>rec_date_normalize</name>
+        <rename>rec_date_normalize</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>name_csv_ore</name>
+        <rename>name_csv_ore</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>name_csv_potenza</name>
+        <rename>name_csv_potenza</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>timeLampOnH</name>
+        <rename>timeLampOnH</rename>
+        <type>Number</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1074</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value 3</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f;Script q&#xd;&#xa;var date_now &#x3d; new Date&#x28;&#x29;&#x3b;&#xd;&#xa;var dayRec&#x3b;&#xd;&#xa;&#xd;&#xa;if &#x28;orario &#x3e;&#x3d; 720&#x29;&#x7b;&#xd;&#xa;  dayRec &#x3d; dateAdd&#x28;date_now, &#x22;d&#x22;, -1&#x29;&#x3b;&#xd;&#xa;  dayRec.setHours&#x28;orario &#x2f; 60&#x29;&#x3b;&#xd;&#xa;  dayRec.setMinutes&#x28;0&#x29;&#x3b;&#xd;&#xa;  dayRec.setSeconds&#x28;0&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;else &#x7b;&#xd;&#xa;  dayRec &#x3d; dateAdd&#x28;date_now, &#x22;d&#x22;, -0&#x29;&#x3b;&#xd;&#xa;  dayRec.setHours&#x28;orario &#x2f; 60&#x29;&#x3b;&#xd;&#xa;  dayRec.setMinutes&#x28;0&#x29;&#x3b;&#xd;&#xa;  dayRec.setSeconds&#x28;0&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;dataRicDate &#x3d; str2date&#x28;dataRichiesta,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#xd;&#xa;dataRicDate.setHours&#x28;12&#x29;&#x3b;&#xd;&#xa;dataRicDate &#x3d; dateAdd&#x28;dataRicDate, &#x22;mi&#x22;, orario&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;dayRecNormalize &#x3d; date2str&#x28;dayRec,&#x22;yyyy.MM.dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#xd;&#xa;dayRecNormalize &#x3d; date2str&#x28;dataRicDate,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;var name_csv &#x3d; &#x22;&#x2f;home&#x2f;SUNSHINE&#x2f;importer&#x2f;JOB&#x2f;BASSANO&#x2f;csvtmp&#x2f;&#x22;&#x3b;&#xd;&#xa;var param &#x3d; getEnvironmentVar&#x28;&#x22;f_short_name&#x22;&#x29;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var param &#x3d; &#x22;conf_REV-001_THER_KWH_1h_00000001.csv&#x22;.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;name_csv &#x3d; name_csv &#x2b; param&#x5b;1&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;2&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;3&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;4&#x5d; &#x2b; &#x22;_&#x22; &#x2b; param&#x5b;5&#x5d;&#x3b;&#xd;&#xa;name_csv_consumo &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_ELER_KWH_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_potenza &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_IPOW_WAT_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_dimming &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_DIMM_PRC_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_ore &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_LIFE_HRS_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;name_csv_temperatura &#x3d; name_csv &#x2b; param&#x5b;0&#x5d;&#x2b;&#x22;_TEMP_CEL_ir_&#x22;&#x2b;param&#x5b;2&#x5d;&#x3b;&#xd;&#xa;</jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>dayRecNormalize</name>
+        <rename>dayRecNormalize</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>name_csv_dimming</name>
+        <rename>name_csv_dimming</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1429</xloc>
+      <yloc>217</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>lamp</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>dayRecNormalize</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>713</xloc>
+      <yloc>76</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>      <field>        <name>dayRecNormalize</name>
+        <rename/>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp2</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp3</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp4</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp5</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp6</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp7</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp8</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp9</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp10</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp11</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp12</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp13</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp14</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp15</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp16</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp1</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>      <field>        <name>lamp</name>
+        <rename>lamp17</rename>
+        <length>-2</length>
+        <precision>-2</precision>
+      </field>        <select_unspecified>N</select_unspecified>
+    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>739</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Stream lookup</name>
+    <type>StreamLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>CSV file input</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>lamp</name>
+        <field>lamp</field>
+      </key>
+      <key>
+        <name>dat</name>
+        <field>dat</field>
+      </key>
+      <key>
+        <name>filename</name>
+        <field>filename</field>
+      </key>
+      <value>
+        <name>dat</name>
+        <rename>dat</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>673</xloc>
+      <yloc>313</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>reverberi</connection>
+    <sql>SELECT tblLightingbodies.code &#x2b; &#x27; - &#x27; &#x2b; tblLightingbodies.descr as lampada, RecDateTime,ReadType,LampState,InputVoltage,AbsorbedCurrent,PowerFactor,ActivePower,ReactivePower,AppearingPower,TimeLampOn,TimeLampPow,TheorPower,Saving,LampID,&#xd;&#xa;&#xd;&#xa;      CASE&#xd;&#xa;&#xd;&#xa;      WHEN Anomaly001 &#x3d; 1 or Anomaly002 &#x3d; 1 or Anomaly003 &#x3d; 1 or Anomaly004 &#x3d; 1 or Anomaly005 &#x3d; 1 or Anomaly006 &#x3d; 1 or Anomaly007 &#x3d; 1 or Anomaly009 &#x3d; 1 or Anomaly010 &#x3d; 1 THEN 1 ELSE 0 &#xd;&#xa;&#xd;&#xa;      END AS anomalia&#xd;&#xa;&#xd;&#xa;FROM tblPolemoduleMeasures left outer join tbllamps on tblPolemoduleMeasures.polemoduleid &#x3d; tbllamps.polemoduleid&#xd;&#xa;&#xd;&#xa;            left outer join tblLightingbodies on tbllamps.LightingbodyID &#x3d; tblLightingbodies.LightingbodyID&#xd;&#xa;&#xd;&#xa;WHERE readtype in &#x28;1,2,3&#x29; and LampID &#x3d; &#x3f; and RecDateTime &#x3e;&#x3d; &#x3f;&#xd;&#xa;order by recdatetime desc&#x3b;</sql>
+    <limit>0</limit>
+    <lookup>Select values</lookup>
+    <execute_each_row>Y</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>892</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input 2</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>reverberi</connection>
+    <sql>select stepid, steptime as orario,LampID, &#x3f; as dataRichiesta,&#xd;&#xa;&#xd;&#xa;case&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;01&#x27; then GroupAction01&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;02&#x27; then GroupAction02&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;03&#x27; then GroupAction03&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;04&#x27; then GroupAction04&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;05&#x27; then GroupAction05&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;06&#x27; then GroupAction06&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;07&#x27; then GroupAction07&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;08&#x27; then GroupAction08&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;09&#x27; then GroupAction09&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;10&#x27; then GroupAction10&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;11&#x27; then GroupAction11&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;12&#x27; then GroupAction12&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;13&#x27; then GroupAction13&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;14&#x27; then GroupAction14&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;15&#x27; then GroupAction15&#xd;&#xa;&#xd;&#xa;      when pos_gruppo &#x3d; &#x27;16&#x27; then GroupAction16&#xd;&#xa;&#xd;&#xa;end as azione     &#xd;&#xa;&#xd;&#xa; &#xd;&#xa;&#xd;&#xa;from &#x28;&#xd;&#xa;&#xd;&#xa;select stepid, steptime, GroupAction01, GroupAction02, GroupAction03, GroupAction04, GroupAction05, GroupAction06, GroupAction07, GroupAction08,&#xd;&#xa;&#xd;&#xa;            GroupAction09, GroupAction10, GroupAction11, GroupAction12, GroupAction13, GroupAction14, GroupAction15, GroupAction16,LampID,&#xd;&#xa;&#xd;&#xa;      case&#xd;&#xa;&#xd;&#xa;            when Group01 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;01&#x27;&#xd;&#xa;&#xd;&#xa;            when Group02 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;02&#x27;&#xd;&#xa;&#xd;&#xa;            when Group03 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;03&#x27;&#xd;&#xa;&#xd;&#xa;            when Group04 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;04&#x27;&#xd;&#xa;&#xd;&#xa;            when Group05 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;05&#x27;&#xd;&#xa;&#xd;&#xa;            when Group06 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;06&#x27;&#xd;&#xa;&#xd;&#xa;            when Group07 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;07&#x27;&#xd;&#xa;&#xd;&#xa;            when Group08 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;08&#x27;&#xd;&#xa;&#xd;&#xa;            when Group09 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;09&#x27;&#xd;&#xa;&#xd;&#xa;            when Group10 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;10&#x27;&#xd;&#xa;&#xd;&#xa;            when Group11 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;11&#x27;&#xd;&#xa;&#xd;&#xa;            when Group12 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;12&#x27;&#xd;&#xa;&#xd;&#xa;            when Group13 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;13&#x27;&#xd;&#xa;&#xd;&#xa;            when Group14 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;14&#x27;&#xd;&#xa;&#xd;&#xa;            when Group15 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;15&#x27;&#xd;&#xa;&#xd;&#xa;            when Group16 in &#x28;select tblGroups.groupid from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblGroups left outer join &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.tblgroupItems on tblGroups.GroupID &#x3d; tblgroupItems.GroupID where tblGroupItems.ElementID &#x3d; &#x3f;&#x29; then &#x27;16&#x27;&#xd;&#xa;&#xd;&#xa;      end as pos_gruppo&#xd;&#xa;&#xd;&#xa;      &#xd;&#xa;&#xd;&#xa;from &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.&#x5b;tblSwbLpmModulesScene&#x5d;, &#x5b;MAESTRO2&#x5d;.&#x5b;dbo&#x5d;.&#x5b;tblLamps&#x5d;&#xd;&#xa;&#xd;&#xa;&#x29;  &#xd;&#xa;&#xd;&#xa;as x where pos_gruppo is not null and LampID &#x3d; &#x3f;&#xd;&#xa;ORDER BY steptime DESC&#x3b;</sql>
+    <limit>1</limit>
+    <lookup>Select values 2</lookup>
+    <execute_each_row>Y</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>880</xloc>
+      <yloc>185</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>C&#x3a;&#x5c;Sviluppo&#x5c;temp&#x5c;result</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>Y</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>QUADRO</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>12</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>f_short_name</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>12</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>45</xloc>
+      <yloc>221</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Write to log</name>
+    <type>WriteToLog</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <loglevel>log_level_basic</loglevel>
+      <displayHeader>Y</displayHeader>
+      <limitRows>N</limitRows>
+      <limitRowsNumber>0</limitRowsNumber>
+      <logmessage>mess lampade&#xd;&#xa;QUADRO&#x3a;&#x24;&#x7b;QUADRO&#x7d;&#xd;&#xa;f_short_name&#x3a;&#x24;&#x7b;f_short_name&#x7d;&#xd;&#xa;</logmessage>
+    <fields>
+      </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>156</xloc>
+      <yloc>72</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>csv della potenza</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>Y</fileNameInField>
+    <fileNameField>name_csv_potenza</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention/>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>rec_date_normalize</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ActivePower</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal>.</decimal>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1344</xloc>
+      <yloc>110</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>csv delle ore</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>Y</fileNameInField>
+    <fileNameField>name_csv_ore</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>file</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention/>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>rec_date_normalize</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>timeLampOnH</name>
+        <type>Number</type>
+        <format>&#x23;.&#x23;&#x3b;-&#x23;.&#x23;</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>2</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1293</xloc>
+      <yloc>10</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>csv dimming</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure/>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>N</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>Y</fileNameInField>
+    <fileNameField>name_csv_dimming</fileNameField>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>name_csv_dimming</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>Y</do_not_open_new_file_init>
+      <extention/>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>dayRecNormalize</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>azione</name>
+        <type>Integer</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1474</xloc>
+      <yloc>342</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>
