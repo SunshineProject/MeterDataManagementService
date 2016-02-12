@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>trasformazioneSunshine</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2014&#x2f;05&#x2f;05 11&#x3a;26&#x3a;00.853</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2014&#x2f;05&#x2f;05 11&#x3a;26&#x3a;00.853</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>postgre</name>
+    <server>20.39.146.100</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database></database>
+    <port></port>
+    <username></username>
+    <password></password>
+    <servername/>
+    <data_tablespace>public</data_tablespace>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>5432</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>CSV file input</from><to>Modified Java Script Value</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter cost</from><to>Dummy &#x28;do nothing&#x29; 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>misura</from><to>numericValue</to><enabled>Y</enabled> </hop>
+  <hop> <from>costo</from><to>numericValue 2</to><enabled>N</enabled> </hop>
+  <hop> <from>Modified Java Script Value</from><to>Database lookup unit</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup unit</from><to>Database lookup 2 codespace</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup 2 codespace</from><to>Database lookup 3 procedure</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup 3 procedure</from><to>Database lookup observableproperty</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup observableproperty</from><to>Database lookup seriesid</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup observableproperty</from><to>Database lookup seriesidCosto</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup seriesidCosto</from><to>Filter cost</to><enabled>Y</enabled> </hop>
+  <hop> <from>numericValue</from><to>Database lookup offering</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup offering</from><to>observationhasoffering</to><enabled>Y</enabled> </hop>
+  <hop> <from>numericValue 2</from><to>Database lookup offering 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup offering 2</from><to>observationhasoffering 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup observableproperty</from><to>Text file output</to><enabled>N</enabled> </hop>
+  <hop> <from>Get File Names 2</from><to>Sort rows</to><enabled>N</enabled> </hop>
+  <hop> <from>Sort rows</from><to>CSV file input</to><enabled>N</enabled> </hop>
+  <hop> <from>Get File Names 2</from><to>CSV file input</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup seriesid</from><to>Text file output</to><enabled>Y</enabled> </hop>
+  <hop> <from>Get File Names 2</from><to>Text file output 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup seriesid</from><to>checkObservatioIdFilter</to><enabled>Y</enabled> </hop>
+  <hop> <from>checkObservatioIdFilter</from><to>Filter rows</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>misura</to><enabled>N</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Dummy &#x28;do nothing&#x29;</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter cost</from><to>Database lookup</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup</from><to>Filter rows 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>costo</to><enabled>N</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Dummy &#x28;do nothing&#x29; 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows</from><to>Execute SQL script</to><enabled>Y</enabled> </hop>
+  <hop> <from>Execute SQL script</from><to>Database lookup 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup 2</from><to>Execute SQL script 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>Execute SQL script 2</from><to>Database lookup 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup 3</from><to>Execute SQL script 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>Filter rows 2</from><to>Execute SQL script 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Execute SQL script 4</from><to>Database lookup 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>Database lookup 4</from><to>numericValue 2</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>CSV file input</name>
+    <type>CsvInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filename>C&#x3a;&#x5c;temp&#x5c;sunshineftptemp&#x5c;201309_IT221E01014050_15.csv</filename>
+    <filename_field>filename</filename_field>
+    <rownum_field/>
+    <include_filename>Y</include_filename>
+    <separator>&#x3b;</separator>
+    <enclosure/>
+    <header>N</header>
+    <buffer_size>50000</buffer_size>
+    <lazy_conversion>N</lazy_conversion>
+    <add_filename_result>Y</add_filename_result>
+    <parallel>N</parallel>
+    <newline_possible>N</newline_possible>
+    <encoding/>
+    <fields>
+      <field>
+        <name>date</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>measure</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+      <field>
+        <name>cost</name>
+        <type>Number</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>both</trim_type>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>171</xloc>
+      <yloc>121</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>observation</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>identifierCost</name>
+        <field>identifier</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>observationid</name>
+        <rename>checkObIdCost</rename>
+        <default>-1</default>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>914</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup 2</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>observation</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>identifier</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>observationid</name>
+        <rename>idobservation</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1218</xloc>
+      <yloc>69</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup 2 codespace</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;codespace&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>codespace</name>
+        <field>codespace</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>codespaceid</name>
+        <rename>codespaceid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>443</xloc>
+      <yloc>38</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup 3</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>offering</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>offering</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>offeringid</name>
+        <rename>offeringid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1426</xloc>
+      <yloc>43</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup 3 procedure</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;procedure&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>procedure</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>procedureid</name>
+        <rename>procedureid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>496</xloc>
+      <yloc>157</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup 4</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>observation</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>identifierCost</name>
+        <field>identifier</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>observationid</name>
+        <rename>idobservation</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>989</xloc>
+      <yloc>229</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup observableproperty</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;observableproperty&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>property</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>observablepropertyid</name>
+        <rename>observablepropertyid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>617</xloc>
+      <yloc>84</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup offering</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;offering&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>offering</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>offeringid</name>
+        <rename>offeringid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1269</xloc>
+      <yloc>140</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup offering 2</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;offering&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>offeringcost</name>
+        <field>identifier</field>
+        <condition>LIKE</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>offeringid</name>
+        <rename>offeringid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1214</xloc>
+      <yloc>231</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup seriesid</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;series&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>procedureid</name>
+        <field>procedureid</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>observablepropertyid</name>
+        <field>observablepropertyid</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>seriesid</name>
+        <rename>seriesid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>683</xloc>
+      <yloc>21</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup seriesidCosto</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;series&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>procedureid</name>
+        <field>procedureid</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <key>
+        <name>idobservationpropertycost</name>
+        <field>observablepropertyid</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>seriesid</name>
+        <rename>seriesid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>678</xloc>
+      <yloc>152</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Database lookup unit</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>&#x22;unit&#x22;</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>Y</eat_row_on_failure>
+      <key>
+        <name>unit</name>
+        <field>unit</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>unitid</name>
+        <rename>unitid</rename>
+        <default/>
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>unit</name>
+        <rename>unit</rename>
+        <default/>
+        <type>String</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>323</xloc>
+      <yloc>155</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29;</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1103</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>766</xloc>
+      <yloc>309</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Dummy &#x28;do nothing&#x29; 3</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1144</xloc>
+      <yloc>355</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Execute SQL script</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>insert into observation &#x28;phenomenontimeend, resulttime, identifier ,phenomenontimestart ,unitid ,codespaceid ,seriesid&#x29;&#xd;&#xa;select &#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;&#xd;&#xa; where  NOT EXISTS&#x28;&#xd;&#xa;	select &#x2a; from observation where identifier &#x3d; &#x3f;		&#xd;&#xa;	&#x29;&#x3b;	</sql>
+    <set_params>Y</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+       <argument><name>phenomenontimeend</name></argument>
+       <argument><name>resulttime</name></argument>
+       <argument><name>identifier</name></argument>
+       <argument><name>phenomenontimestart</name></argument>
+       <argument><name>unitid</name></argument>
+       <argument><name>codespaceid</name></argument>
+       <argument><name>seriesid</name></argument>
+       <argument><name>identifier</name></argument>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1099</xloc>
+      <yloc>70</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Execute SQL script 2</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>insert into numericvalue &#x28;observationid, value&#x29;&#xd;&#xa;select &#x3f;,&#x3f;&#xd;&#xa; where  NOT EXISTS&#x28;&#xd;&#xa;	select &#x2a; from numericvalue where observationid &#x3d; &#x3f;		&#xd;&#xa;	&#x29;&#x3b;	</sql>
+    <set_params>Y</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+       <argument><name>idobservation</name></argument>
+       <argument><name>measure</name></argument>
+       <argument><name>idobservation</name></argument>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1319</xloc>
+      <yloc>60</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Execute SQL script 3</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>insert into observationhasoffering &#x28;observationid, offeringid&#x29;&#xd;&#xa;select &#x3f;,&#x3f;&#xd;&#xa; where  NOT EXISTS&#x28;&#xd;&#xa;	select &#x2a; from observationhasoffering where observationid &#x3d; &#x3f;		&#xd;&#xa;	&#x29;&#x3b;	</sql>
+    <set_params>Y</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+       <argument><name>idobservation</name></argument>
+       <argument><name>offeringid</name></argument>
+       <argument><name>idobservation</name></argument>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1548</xloc>
+      <yloc>44</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Execute SQL script 4</name>
+    <type>ExecSQL</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <execute_each_row>Y</execute_each_row>
+    <single_statement>N</single_statement>
+    <replace_variables>Y</replace_variables>
+    <quoteString>N</quoteString>
+    <sql>sert into observation &#x28;phenomenontimeend, resulttime, identifier ,phenomenontimestart ,unitid ,codespaceid ,seriesid&#x29;&#xd;&#xa;select &#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;,&#x3f;&#xd;&#xa; where  NOT EXISTS&#x28;&#xd;&#xa;	select &#x2a; from observation where identifier &#x3d; &#x3f;		&#xd;&#xa;	&#x29;&#x3b;	</sql>
+    <set_params>Y</set_params>
+    <insert_field/>
+    <update_field/>
+    <delete_field/>
+    <read_field/>
+    <arguments>
+       <argument><name>phenomenontimeend</name></argument>
+       <argument><name>resulttime</name></argument>
+       <argument><name>identifierCost</name></argument>
+       <argument><name>phenomenontimestart</name></argument>
+       <argument><name>unitid</name></argument>
+       <argument><name>codespaceid</name></argument>
+       <argument><name>identifierCost</name></argument>
+    </arguments>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1017</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter cost</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Database lookup</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <conditions>
+  <condition>
+   <negated>N</negated>
+   <leftvalue>cost</leftvalue>
+   <function>IS NOT NULL</function>
+   <rightvalue/>
+   <value><name>constant</name><type>String</type><text>&#x2f;</text><length>-1</length><precision>-1</precision><isnull>N</isnull><mask/></value>   </condition>
+  </conditions>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>797</xloc>
+      <yloc>175</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Execute SQL script</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29;</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>checkObId</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Integer</type><text>-1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>978</xloc>
+      <yloc>1</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Execute SQL script 4</send_true_to>
+<send_false_to>Dummy &#x28;do nothing&#x29; 3</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>checkObIdCost</leftvalue>
+ <function>&#x3d;</function>
+ <rightvalue/>
+ <value><name>constant</name><type>Integer</type><text>-1</text><length>-1</length><precision>0</precision><isnull>N</isnull><mask>&#x23;&#x3b;-&#x23;</mask></value> </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1019</xloc>
+      <yloc>357</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Get File Names 2</name>
+    <type>GetFileNames</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <filter>
+      <filterfiletype>all_files</filterfiletype>
+    </filter>
+    <doNotFailIfNoFile>N</doNotFailIfNoFile>
+    <rownum>N</rownum>
+    <isaddresult>Y</isaddresult>
+    <filefield>N</filefield>
+    <rownum_field/>
+    <filename_Field/>
+    <wildcard_Field/>
+    <exclude_wildcard_Field/>
+    <dynamic_include_subfolders>N</dynamic_include_subfolders>
+    <limit>0</limit>
+    <file>
+      <name>&#x2f;home&#x2f;SUNSHINE&#x2f;importer&#x2f;JOB&#x2f;ROVERETO&#x2f;csvtmp&#x2f;</name>
+      <filemask>.&#x2b;&#x5c;.csv</filemask>
+      <exclude_filemask/>
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>30</xloc>
+      <yloc>119</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>      <jsScript>        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>&#xd;&#xa;var freq&#x3b;&#xd;&#xa;var cont&#x3b;&#xd;&#xa;var proc&#x3b;&#xd;&#xa;var procedure&#x3b;&#xd;&#xa;var unit&#x3b;&#xd;&#xa;var property&#x3b;&#xd;&#xa;var codespace&#x3b;&#xd;&#xa;var phenomenontimestart&#x3b;&#xd;&#xa;var phenomenontimeend&#x3b;&#xd;&#xa;var resulttime&#x3b;&#xd;&#xa;var param &#x3d; filename.split&#x28;&#x22;_&#x22;&#x29;&#x3b;&#xd;&#xa;var identifier&#x3b;&#xd;&#xa;var identifierCost&#x3b;&#xd;&#xa;var offering&#x3b;&#xd;&#xa;var offeringcost&#x3b;&#xd;&#xa;var idobservationpropertycost &#x3d; 8&#x3b;&#xd;&#xa;var ident_offering_observation&#x3b;&#xd;&#xa;var ident_offering_cost&#x3b;&#xd;&#xa;cont &#x3d; param&#x5b;param.length -1&#x5d;.split&#x28;&#x22;.&#x22;&#x29;&#x5b;0&#x5d;&#x3b;&#xd;&#xa;freq &#x3d; param&#x5b;3&#x5d;&#x3b;&#xd;&#xa;var tmpProc &#x3d; param&#x5b;0&#x5d;.split&#x28;&#x22;&#x2f;&#x22;&#x29;&#x3b;&#xd;&#xa;var proc &#x3d; tmpProc&#x5b;tmpProc.length -1&#x5d;.substring&#x28;0, tmpProc&#x5b;tmpProc.length -1&#x5d;.length&#x29;&#x3b;&#xd;&#xa;procedure &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;procedure&#x2f;&#x22;&#x2b;proc.substring&#x28;proc.length -7, proc.length&#x29;&#x3b;&#xd;&#xa;var c &#x3d; param&#x5b;0&#x5d;.split&#x28;&#x22;-&#x22;&#x29;&#x5b;0&#x5d;&#x3b;&#xd;&#xa;codespace &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;project-pilot&#x2f;&#x22;&#x2b;c.substring&#x28;c.length -3, c.length&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#x2f;&#x2f;2015-01-13 17&#x3a;15&#x3a;00&#xd;&#xa;var newdate &#x3d; str2date&#x28;date,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;var period&#x3b;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;1h&#x27; &#x7c;&#x7c; freq &#x3d;&#x3d; &#x27;ir&#x27;&#x29;&#x7b; &#x2f;&#x2f;anche nel caso di letture irregolari perche&#x27; a questo punto ho gi&#xe0; fatto l&#x27;interpolazione&#xd;&#xa;	period &#x3d; &#x22;hh&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;1d&#x27;&#x29;&#x7b;&#xd;&#xa;	period &#x3d; &#x22;d&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;1w&#x27;&#x29;&#x7b;&#xd;&#xa;	period &#x3d; &#x22;w&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;1m&#x27;&#x29;&#x7b;&#xd;&#xa;	period &#x3d; &#x22;m&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;1y&#x27;&#x29;&#x7b;&#xd;&#xa;	period &#x3d; &#x22;y&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;if &#x28;freq &#x3d;&#x3d; &#x27;15&#x27;&#x29;&#x7b;&#xd;&#xa;	period &#x3d; &#x22;mi&#x22;&#x3b;&#xd;&#xa;    phenomenontimeend &#x3d; dateAdd&#x28;newdate,period, 0&#x29;&#x3b;&#xd;&#xa;    phenomenontimestart &#x3d; dateAdd&#x28;newdate,period, -15&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;if &#x28;freq &#x21;&#x3d; &#x27;15&#x27;&#x29;&#x7b;&#xd;&#xa;	phenomenontimeend &#x3d; dateAdd&#x28;newdate,period, 0&#x29;&#x3b;&#xd;&#xa;	phenomenontimestart &#x3d; dateAdd&#x28;newdate,period, -1&#x29;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#xd;&#xa;resulttime &#x3d;  phenomenontimeend&#x3b;&#xd;&#xa;ident_offering_observation &#x3d; proc&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;1&#x5d;&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;2&#x5d;&#x2b;&#x22;_&#x22;&#x2b;freq&#x3b;&#xd;&#xa;ident_offering_cost &#x3d; proc&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;1&#x5d;&#x2b;&#x22;_EUR_&#x22;&#x2b;freq&#x3b;&#xd;&#xa;&#xd;&#xa;identifier &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observation&#x2f;&#x22;&#x2b;ident_offering_observation&#x2b;&#x22;&#x2f;&#x22;&#x2b;date2str&#x28;phenomenontimeend,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;identifierCost &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observation&#x2f;&#x22;&#x2b;ident_offering_cost&#x2b;&#x22;&#x2f;&#x22;&#x2b;date2str&#x28;phenomenontimeend,&#x22;yyyy-MM-dd HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x3b;&#xd;&#xa;&#xd;&#xa;offering &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;offering&#x2f;&#x22;&#x2b;proc&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;1&#x5d;&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;2&#x5d;&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;3&#x5d;&#x3b;&#xd;&#xa;offeringcost &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;offering&#x2f;&#x22;&#x2b;proc&#x2b;&#x22;_&#x22;&#x2b;param&#x5b;1&#x5d;&#x2b;&#x22;_EUR_&#x22;&#x2b;param&#x5b;3&#x5d;&#x3b;&#xd;&#xa;&#xd;&#xa;switch&#x28;param&#x5b;2&#x5d;&#x29; &#x7b;&#xd;&#xa;case &#x27;KWH&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;kWh&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;CEL&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;&#xb0;C&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;MCU&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;m3&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;EUR&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;Euro&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;WAT&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;W&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;PRC&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;&#x25;&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;HRS&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;hours&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;BOO&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;0&#x2f;1&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;NUM&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;elements&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;HMS&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;date&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;AMP&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;Ampere&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;CDL&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;codelist&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;KWA&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;kW&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;KMH&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;km&#x2f;h&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;WM2&#x27;&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;W&#x2f;m2&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;default&#x3a;&#xd;&#xa;    unit &#x3d; &#x22;kWh&#x22;&#x3b;&#xd;&#xa;&#x7d; &#xd;&#xa;&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;switch&#x28;substr&#x28;param&#x5b;1&#x5d;,0,param&#x5b;1&#x5d;.length -1 &#x29;&#x29; &#x7b;&#xd;&#xa;case &#x27;ELE&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ELER&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;GAS&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;GASR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;THE&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;THER&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;LIQ&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;LIQR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;SLD&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;SLDR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;STM&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;STMR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;ELE&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ELEC&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;GASC&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;GASR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;THEC&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;THEC&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;LIQC&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;LIQC&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;SLDC&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;SLDC&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;STMC&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;STMC&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;ELEA&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ELEA&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;GASA&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;GASA&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;THEA&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;THEA&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;IPOW&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;IPOW&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;DIMM&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;DIMM&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;LIFE&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;LIFE&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;ONOF&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ONOF&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;NALL&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;NALL&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;N-OK&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;N-OK&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;SUNR&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;SUNR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;SUNS&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;SUNS&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;ICUR&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ICUR&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;COSF&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;COSF&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;IVOL&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;IVOL&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;SCDL&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;SCDL&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;ACNT&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ACNT&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;TEMP&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;TEMP&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;WIND&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;WIND&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;case &#x27;IRRA&#x27;&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;IRRA&#x22;&#x3b;&#xd;&#xa;    break&#x3b;&#xd;&#xa;default&#x3a;&#xd;&#xa;    property &#x3d; &#x22;http&#x3a;&#x2f;&#x2f;www.sunshineproject.eu&#x2f;swe&#x2f;observableProperty&#x2f;ELE&#x22;&#x3b;&#xd;&#xa;&#x7d;&#xd;&#xa;&#x2f;&#x2f;var id &#x3d; Math.floor&#x28;&#x28;Math.random&#x28;&#x29; &#x2a; 100&#x29; &#x2b; 1&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var idCost &#x3d; Math.floor&#x28;&#x28;Math.random&#x28;&#x29; &#x2a; 100&#x29; &#x2b; 1&#x29;&#x3b;&#xd;&#xa;&#x2f;&#x2f;var unitid &#x3d; 1&#x3b; &#x2f;&#x2f;TODO DA CALCOLARE&#xd;&#xa;&#x2f;&#x2f;var proc &#x3d; 1&#x3b; &#x2f;&#x2f;TODO DA CALCOLARE&#xd;&#xa;&#x2f;&#x2f;var procCost &#x3d; 2&#x3b; &#x2f;&#x2f;TODO DA CALCOLARE&#xd;&#xa;&#x2f;&#x2f;var observable &#x3d; 3&#x3b; &#x2f;&#x2f;TODO DA CALCOLARE&#xd;&#xa;&#x2f;&#x2f;var featofin &#x3d; 1&#x3b; &#x2f;&#x2f;TODO DA CALCOLARE&#xd;&#xa;var ppp&#x3d; substr&#x28;param&#x5b;1&#x5d;,0,param&#x5b;1&#x5d;.length -1 &#x29;&#x3b;</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>-1</jsScript_type>
+        <jsScript_name>dateDiff_Sample</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f; Returns the difference, of a given type, between &#xa;&#x2f;&#x2f; two dates.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; Usage&#x3a;&#xa;&#x2f;&#x2f; dateDiff&#x28;var,var,var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Startdate.&#xa;&#x2f;&#x2f; 2&#x3a; Date - The Variable with the Endate.&#xa;&#x2f;&#x2f; 3&#x3a; String - The Type which represents the &#xa;&#x2f;&#x2f; the return value.&#xa;&#x2f;&#x2f; y - Years&#xa;&#x2f;&#x2f; m - Months&#xa;&#x2f;&#x2f; d - Days&#xa;&#x2f;&#x2f; w - Weeks&#xa;&#x2f;&#x2f; wd - Workingdays&#xa;&#x2f;&#x2f; hh - Hours&#xa;&#x2f;&#x2f; mi - Minutes&#xa;&#x2f;&#x2f; ss - Seconds&#xa;&#x2f;&#x2f; &#xa;&#x2f;&#x2f; 2006-11-15&#xa;&#x2f;&#x2f;&#xa;var d1 &#x3d; new Date&#x28;&#x29;&#x3b;&#xa;var d2 &#x3d; dateAdd&#x28;d1,&#x22;y&#x22;,1&#x29;&#x3b;&#xa;Alert&#x28;dateDiff&#x28;d1,d2,&#x22;y&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateDiff&#x28;d1,d2,&#x22;m&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateDiff&#x28;d1,d2,&#x22;d&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateDiff&#x28;d1,d2,&#x22;wd&#x22;&#x29;&#x29;&#x3b;</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>-1</jsScript_type>
+        <jsScript_name>dateAdd_Sample</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f; Add&#x27;s the given number to  the given date Value.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; Usage&#x3a;&#xa;&#x2f;&#x2f; dateAdd&#x28;var,var,var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Date.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Type which represents the value&#xa;&#x2f;&#x2f; to add.&#xa;&#x2f;&#x2f; y - Years&#xa;&#x2f;&#x2f; m - Months&#xa;&#x2f;&#x2f; d - Days&#xa;&#x2f;&#x2f; w - Weeks&#xa;&#x2f;&#x2f; wd - Workingdays&#xa;&#x2f;&#x2f; hh - Hours&#xa;&#x2f;&#x2f; mi - Minutes&#xa;&#x2f;&#x2f; ss - Seconds&#xa;&#x2f;&#x2f; 3&#x3a; Numeric - The Value to add.&#xa;&#x2f;&#x2f; &#xa;&#x2f;&#x2f; 2006-11-15&#xa;&#x2f;&#x2f;&#xa;var d1 &#x3d; new Date&#x28;&#x29;&#x3b;&#xa;Alert&#x28;dateAdd&#x28;d1, &#x22;y&#x22;, 1&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateAdd&#x28;d1, &#x22;m&#x22;, 4&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateAdd&#x28;d1, &#x22;d&#x22;, 5&#x29;&#x29;&#x3b;&#xa;Alert&#x28;dateAdd&#x28;d1, &#x22;wd&#x22;, 5&#x29;&#x29;&#x3b;</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>-1</jsScript_type>
+        <jsScript_name>str2date_Sample</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f; Converts the given String to a date Value.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; Usage&#x3a;&#xa;&#x2f;&#x2f; str2date&#x28;var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; String - The Variable with the String to convert.&#xa;&#x2f;&#x2f; This call uses your localized format.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; str2date&#x28;var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; String - The Variable with the String to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f;        yy &#x2f; yyyy - 06 &#x2f; 2006&#xa;&#x2f;&#x2f;        MM &#x2f; MMM &#x2f; MMMMM - 11 &#x2f; Nov &#x2f; November&#xa;&#x2f;&#x2f;        d &#x2f; dd  - 1 &#x2f; 01&#xa;&#x2f;&#x2f;        E &#x2f; EEEE - Tue &#x2f; Tuesday&#xa;&#x2f;&#x2f;        hh &#x2f; HH - 11 &#x2f; 23&#xa;&#x2f;&#x2f;        m &#x2f; mm - 5 &#x2f; 05&#xa;&#x2f;&#x2f;        s &#x2f; ss - 8 &#x2f; 08&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; str2date&#x28;var, var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; String - The Variable with the String to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f; 3&#x3a; String - The Locale Parameter&#xa;&#x2f;&#x2f;    An valid ISO Language Code. &#x28;DE &#x3d; German, EN &#x3d; English, FR &#x3d; France, ...&#x29;&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; str2date&#x28;var, var, var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; String - The Variable with the String to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f; 3&#x3a; String - The Locale Parameter&#xa;&#x2f;&#x2f;    An valid ISO Language Code. &#x28;DE &#x3d; German, EN &#x3d; English, FR &#x3d; France, ...&#x29;&#xa;&#x2f;&#x2f; 4&#x3a; String - The Timezone Parameter.&#xa;&#x2f;&#x2f;    A valid timezone&#x3a; EST, GMT, ... &#x28;if invalid GMT will be selected as default&#x29;&#xa;&#x2f;&#x2f; &#xa;&#x2f;&#x2f; 2006-11-15&#xa;&#x2f;&#x2f;&#xa;Alert&#x28;str2date&#x28;&#x22;01.12.2006&#x22;,&#x22;dd.MM.yyyy&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;str2date&#x28;&#x22;01.12.2006 23&#x3a;23&#x3a;01&#x22;,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;str2date&#x28;&#x22;Tue.May.2006&#x22;,&#x22;E.MMM.yyyy&#x22;,&#x22;EN&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;str2date&#x28;&#x22;22.02.2008 23&#x3a;23&#x3a;01&#x22;,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;,&#x22;DE&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;str2date&#x28;&#x22;22.02.2008 23&#x3a;23&#x3a;01&#x22;,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;,&#x22;DE&#x22;, &#x22;EST&#x22;&#x29;&#x29;&#x3b;</jsScript_script>
+      </jsScript>      <jsScript>        <jsScript_type>-1</jsScript_type>
+        <jsScript_name>date2str_Sample</jsScript_name>
+        <jsScript_script>&#x2f;&#x2f; Converts the given Date to a string Value.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; Usage&#x3a;&#xa;&#x2f;&#x2f; date2str&#x28;var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Date to convert.&#xa;&#x2f;&#x2f; This call uses your localized format.&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; date2str&#x28;var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Date to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f;        yy &#x2f; yyyy - 06 &#x2f; 2006&#xa;&#x2f;&#x2f;        MM &#x2f; MMM &#x2f; MMMMM - 11 &#x2f; Nov &#x2f; November&#xa;&#x2f;&#x2f;        d &#x2f; dd  - 1 &#x2f; 01&#xa;&#x2f;&#x2f;        E &#x2f; EEEE - Tue &#x2f; Tuesday&#xa;&#x2f;&#x2f;        hh &#x2f; HH - 11 &#x2f; 23&#xa;&#x2f;&#x2f;        m &#x2f; mm - 5 &#x2f; 05&#xa;&#x2f;&#x2f;        s &#x2f; ss - 8 &#x2f; 08&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; date2str&#x28;var, var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Date to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f; 3&#x3a; String - The Locale Parameter&#xa;&#x2f;&#x2f;    A valid ISO Language Code. &#x28;DE &#x3d; German, EN &#x3d; English, FR &#x3d; France, ...&#x29;&#xa;&#x2f;&#x2f;&#xa;&#x2f;&#x2f; date2str&#x28;var, var, var, var&#x29;&#x3b;&#xa;&#x2f;&#x2f; 1&#x3a; Date - The Variable with the Date to convert.&#xa;&#x2f;&#x2f; 2&#x3a; String - The Format&#x3a;&#xa;&#x2f;&#x2f; 3&#x3a; String - The Locale Parameter&#xa;&#x2f;&#x2f;    A valid ISO Language Code. &#x28;DE &#x3d; German, EN &#x3d; English, FR &#x3d; France, ...&#x29;&#xa;&#x2f;&#x2f; 4&#x3a; String - The Timezone Parameter.&#xa;&#x2f;&#x2f;    A valid timezone&#x3a; EST, GMT, ... &#x28;if invalid GMT will be selected as default&#x29;&#xa;&#x2f;&#x2f; &#xa;&#x2f;&#x2f; 2006-11-15&#xa;&#x2f;&#x2f;&#xa;var dValue &#x3d; new Date&#x28;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue&#x29;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue,&#x22;dd.MM.yyyy&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue,&#x22;E.MMM.yyyy&#x22;,&#x22;DE&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;,&#x22;EN&#x22;&#x29;&#x29;&#x3b;&#xa;Alert&#x28;date2str&#x28;dValue,&#x22;dd.MM.yyyy HH&#x3a;mm&#x3a;ss&#x22;,&#x22;EN&#x22;, &#x22;EST&#x22;&#x29;&#x29;&#x3b;&#xa;     </jsScript_script>
+      </jsScript>    </jsScripts>    <fields>      <field>        <name>freq</name>
+        <rename>freq</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>phenomenontimeend</name>
+        <rename>phenomenontimeend</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>resulttime</name>
+        <rename>resulttime</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>identifier</name>
+        <rename>identifier</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>phenomenontimestart</name>
+        <rename>phenomenontimestart</rename>
+        <type>Date</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>identifierCost</name>
+        <rename>identifierCost</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>unit</name>
+        <rename>unit</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>codespace</name>
+        <rename>codespace</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>procedure</name>
+        <rename>procedure</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>property</name>
+        <rename>property</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>idobservationpropertycost</name>
+        <rename>idobservationpropertycost</rename>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>offering</name>
+        <rename>offering</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>offeringcost</name>
+        <rename>offeringcost</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ident_offering_observation</name>
+        <rename>ident_offering_observation</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ident_offering_cost</name>
+        <rename>ident_offering_cost</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>      <field>        <name>ppp</name>
+        <rename>ppp</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>271</xloc>
+      <yloc>39</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+      <directory>tmp</directory>
+      <prefix>out</prefix>
+      <sort_size>1000000</sort_size>
+      <free_memory/>
+      <compress>N</compress>
+      <compress_variable/>
+      <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>filename</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>104</xloc>
+      <yloc>64</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>tmptransf</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>Y</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>identifierCost</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>procedure</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>property</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>idobservationpropertycost</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>offering</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>offeringcost</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ident_offering_observation</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ident_offering_cost</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>unitid</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>procedureid</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>observablepropertyid</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>seriesid</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>15</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>phenomenontimestart</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>phenomenontimeend</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>date</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>616</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Text file output 2</name>
+    <type>TextFileOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <separator>&#x3b;</separator>
+    <enclosure>&#x22;</enclosure>
+    <enclosure_forced>N</enclosure_forced>
+    <enclosure_fix_disabled>N</enclosure_fix_disabled>
+    <header>Y</header>
+    <footer>N</footer>
+    <format>DOS</format>
+    <compression>None</compression>
+    <encoding/>
+    <endedLine/>
+    <fileNameInField>N</fileNameInField>
+    <fileNameField/>
+    <create_parent_folder>Y</create_parent_folder>
+    <file>
+      <name>fileOut</name>
+      <is_command>N</is_command>
+      <servlet_output>N</servlet_output>
+      <do_not_open_new_file_init>N</do_not_open_new_file_init>
+      <extention>txt</extention>
+      <append>N</append>
+      <split>N</split>
+      <haspartno>N</haspartno>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format/>
+      <add_to_result_filenames>N</add_to_result_filenames>
+      <pad>N</pad>
+      <fast_dump>N</fast_dump>
+      <splitevery>0</splitevery>
+    </file>
+    <fields>
+      <field>
+        <name>filename</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>500</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>short_filename</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>500</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>path</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>500</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>type</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>500</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>exists</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>ishidden</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>isreadable</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>iswriteable</name>
+        <type>Boolean</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>lastmodifiedtime</name>
+        <type>Date</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>size</name>
+        <type>Integer</type>
+        <format>&#x23;&#x3b;-&#x23;</format>
+        <currency/>
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>0</precision>
+      </field>
+      <field>
+        <name>extension</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>uri</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>rooturi</name>
+        <type>String</type>
+        <format/>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif/>
+        <trim_type>none</trim_type>
+        <length>-1</length>
+        <precision>-1</precision>
+      </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>227</xloc>
+      <yloc>383</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>checkObservatioIdFilter</name>
+    <type>DBLookup</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <cache>N</cache>
+    <cache_load_all>N</cache_load_all>
+    <cache_size>0</cache_size>
+    <lookup>
+      <schema/>
+      <table>observation</table>
+      <orderby/>
+      <fail_on_multiple>N</fail_on_multiple>
+      <eat_row_on_failure>N</eat_row_on_failure>
+      <key>
+        <name>identifier</name>
+        <field>identifier</field>
+        <condition>&#x3d;</condition>
+        <name2/>
+      </key>
+      <value>
+        <name>observationid</name>
+        <rename>checkObId</rename>
+        <default>-1</default>
+        <type>Integer</type>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>876</xloc>
+      <yloc>0</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>costo</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>observation</table>
+    <commit>1</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>Y</return_keys>
+    <return_field>idobservation</return_field>
+    <fields>
+        <field>
+          <column_name>phenomenontimeend</column_name>
+          <stream_name>phenomenontimeend</stream_name>
+        </field>
+        <field>
+          <column_name>resulttime</column_name>
+          <stream_name>resulttime</stream_name>
+        </field>
+        <field>
+          <column_name>phenomenontimestart</column_name>
+          <stream_name>phenomenontimestart</stream_name>
+        </field>
+        <field>
+          <column_name>unitid</column_name>
+          <stream_name>unitid</stream_name>
+        </field>
+        <field>
+          <column_name>codespaceid</column_name>
+          <stream_name>codespaceid</stream_name>
+        </field>
+        <field>
+          <column_name>seriesid</column_name>
+          <stream_name>seriesid</stream_name>
+        </field>
+        <field>
+          <column_name>identifier</column_name>
+          <stream_name>identifierCost</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>901</xloc>
+      <yloc>182</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>misura</name>
+    <type>TableOutput</type>
+    <description>misura&#xd;&#xa;</description>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>observation</table>
+    <commit>10</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>N</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>Y</return_keys>
+    <return_field>idobservation</return_field>
+    <fields>
+        <field>
+          <column_name>phenomenontimeend</column_name>
+          <stream_name>phenomenontimeend</stream_name>
+        </field>
+        <field>
+          <column_name>resulttime</column_name>
+          <stream_name>resulttime</stream_name>
+        </field>
+        <field>
+          <column_name>identifier</column_name>
+          <stream_name>identifier</stream_name>
+        </field>
+        <field>
+          <column_name>phenomenontimestart</column_name>
+          <stream_name>phenomenontimestart</stream_name>
+        </field>
+        <field>
+          <column_name>unitid</column_name>
+          <stream_name>unitid</stream_name>
+        </field>
+        <field>
+          <column_name>codespaceid</column_name>
+          <stream_name>codespaceid</stream_name>
+        </field>
+        <field>
+          <column_name>seriesid</column_name>
+          <stream_name>seriesid</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1011</xloc>
+      <yloc>141</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>numericValue</name>
+    <type>TableOutput</type>
+    <description>costo&#xd;&#xa;</description>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>&#x22;numericvalue&#x22;</table>
+    <commit>10</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>observationid</column_name>
+          <stream_name>idobservation</stream_name>
+        </field>
+        <field>
+          <column_name>value</column_name>
+          <stream_name>measure</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1136</xloc>
+      <yloc>138</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>numericValue 2</name>
+    <type>TableOutput</type>
+    <description>costo&#xd;&#xa;</description>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>&#x22;numericvalue&#x22;</table>
+    <commit>1</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>observationid</column_name>
+          <stream_name>idobservation</stream_name>
+        </field>
+        <field>
+          <column_name>value</column_name>
+          <stream_name>cost</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1098</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>observationhasoffering</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>&#x22;observationhasoffering&#x22;</table>
+    <commit>10</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>observationid</column_name>
+          <stream_name>idobservation</stream_name>
+        </field>
+        <field>
+          <column_name>offeringid</column_name>
+          <stream_name>offeringid</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1417</xloc>
+      <yloc>139</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>observationhasoffering 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>postgre</connection>
+    <schema/>
+    <table>&#x22;observationhasoffering&#x22;</table>
+    <commit>1</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>observationid</column_name>
+          <stream_name>idobservation</stream_name>
+        </field>
+        <field>
+          <column_name>offeringid</column_name>
+          <stream_name>offeringid</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>1391</xloc>
+      <yloc>238</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>
