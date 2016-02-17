@@ -18,6 +18,6 @@ For consumption data from meters two data flows are supported by the platform:
 Two service endpoints correspond to these types of flows: 
 *	FTP Ingestion service;
 *	Green Button Ingestion service.
-*	
+
 To maximize the reuse of the developed software, the Green Button Ingestion service doesn’t load directly the data in the DB, but produces a CSV file that is treated by a dedicated component, the CSV loader, that is the same used by the FTP Ingestion service. 
 The flow of indoor temperature readings is channelled through the Green Button web service.
